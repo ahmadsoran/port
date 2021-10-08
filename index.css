@@ -11,12 +11,17 @@
           box-shadow: none;
 }
 
+html {
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #0E0C38;
+  overflow: hidden;
 }
 
 .container {
@@ -336,6 +341,14 @@ body {
   background-color: #FFFFFF;
   color: red;
 }
+.btnSocial button:nth-child(1) {
+  background-color: #FF0513;
+  border: red solid 2px;
+}
+.btnSocial button:nth-child(1):hover {
+  background-color: #FFFFFF;
+  border: #FFFFFF solid 2px;
+}
 
 .se2Content2 img {
   width: 100%;
@@ -365,18 +378,17 @@ body {
     -webkit-filter: brightness(60%) saturate(0%);
             filter: brightness(60%) saturate(0%);
   }
+
+  .shape {
+    display: none;
+  }
 }
-.circleShape {
-  width: 40vw;
-  height: 40vw;
-  background-color: #142963;
-  opacity: 0.2;
+.shape {
+  width: 15vw;
   position: absolute;
+  left: 0%;
   top: 50%;
-  left: -20%;
   z-index: -1;
-  -webkit-transform: translate(0%, -50%);
-          transform: translate(0%, -50%);
-  border-radius: 0% 50% 50% 0%;
-  overflow: hidden;
+  -webkit-transform: translate(-20%, -45%);
+          transform: translate(-20%, -45%);
 }/*# sourceMappingURL=index.css.map */
