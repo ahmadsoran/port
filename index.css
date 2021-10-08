@@ -12,7 +12,7 @@
 }
 
 html {
-  overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -21,7 +21,6 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #0E0C38;
-  overflow: hidden;
 }
 
 .container {
@@ -92,6 +91,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   position: relative;
+  cursor: pointer;
 }
 
 .nav-item button {
@@ -112,6 +112,7 @@ body {
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
   background: none;
+  cursor: pointer;
 }
 
 .nav-item button:hover {
@@ -120,37 +121,6 @@ body {
 }
 
 .nav-item :hover {
-  color: #d1d1d1;
-}
-
-.fas {
-  color: #FFFFFF;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-}
-
-.fas:hover {
-  color: #d1d1d1;
-}
-
-.fas[aria-expanded=true] {
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-  color: red;
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-}
-
-.fa-arrow-circle-down {
-  display: none;
-  font-size: clamp(1.7rem, 4vw, 5.1rem);
-}
-
-.nav-link:focus {
   color: #d1d1d1;
 }
 
@@ -336,6 +306,7 @@ body {
   margin-top: 2rem;
   padding: 1rem;
   margin-bottom: 2rem;
+  cursor: pointer;
 }
 .btnSocial button:hover {
   background-color: #FFFFFF;
@@ -360,6 +331,56 @@ body {
   z-index: 0;
 }
 
+.shape {
+  width: 15vw;
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  z-index: -1;
+  -webkit-transform: translate(-20%, -45%);
+          transform: translate(-20%, -45%);
+}
+
+#section--3 {
+  margin-top: 3rem;
+  background-color: #040221;
+  width: 100%;
+}
+
+.aboutSection {
+  margin-top: 10%;
+}
+
+.sec3Content h1 {
+  color: #FFFFFF;
+  font-size: clamp(1.7rem, 4vw, 5.1rem);
+  font-weight: 400;
+}
+.sec3Content p {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 200;
+  opacity: 0.6;
+}
+
+.devimg {
+  width: 100%;
+  height: 50vh;
+  fill: #0E0C38;
+  stroke-width: 1rem;
+  stroke-opacity: 1;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 100px;
+  stroke-dasharray: 0;
+  border: 3rem #0E0C38 solid;
+  padding: 1rem;
+  background-image: url(assets/img/1602738901601.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @media screen and (max-width: 384px) {
   .se2Content p, .se2Content h1, .se2Content h6, .se2Content i, .se2Content .btnSocial button {
     text-align: center;
@@ -382,13 +403,38 @@ body {
   .shape {
     display: none;
   }
+
+  .devimg {
+    margin-top: 3rem;
+  }
+
+  .customBTN1 {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
 }
-.shape {
-  width: 15vw;
-  position: absolute;
-  left: 0%;
-  top: 50%;
-  z-index: -1;
-  -webkit-transform: translate(-20%, -45%);
-          transform: translate(-20%, -45%);
+.customBTN1 {
+  color: #FFFFFF;
+  stroke-width: 2px;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 100;
+  stroke-dashoffset: 0%;
+  width: clamp(3rem, 100%, 30%);
+  padding: 3%;
+  margin: 3%;
+  border: white solid 2px;
+  border-radius: 4.5rem;
+  font-size: 1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  background: none;
+  cursor: pointer;
+}
+.customBTN1:hover {
+  background-color: #FFFFFF;
+  color: #FF0513;
 }/*# sourceMappingURL=index.css.map */
