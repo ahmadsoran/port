@@ -367,8 +367,8 @@ body {
   }
 }
 .circleShape {
-  width: 50rem;
-  height: 50rem;
+  width: 40vw;
+  height: 40vw;
   background-color: #142963;
   opacity: 0.2;
   position: absolute;

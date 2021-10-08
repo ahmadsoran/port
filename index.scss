@@ -370,8 +370,8 @@ button{
 }
 }
 .circleShape{
-  width: 50rem;
-  height: 50rem;
+  width: 40vw;
+  height: 40vw;
   background-color: #142963;
   opacity: 0.2;
   position: absolute;
@@ -381,6 +381,7 @@ button{
   transform: translate(-0%,-50%);
   border-radius: 0% 50% 50% 0%;
   overflow: hidden;
+  
 
 
 }
