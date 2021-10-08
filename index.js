@@ -9,8 +9,7 @@ nvBtns.forEach(line => {
     line.classList.toggle('AnimNvBtn');
 });
 
-nav.classList.toggle('show');
-// navItem.classList.toggle('open');
+navItem.classList.toggle('open');
 navItemLink.forEach(link => { 
     link.classList.toggle('fade');
 });
