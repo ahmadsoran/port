@@ -6,13 +6,13 @@
   box-sizing: border-box;
   outline: none;
   font-family: "Poppins";
-  font-size: 62.5%;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
 html {
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 body {
@@ -126,8 +126,15 @@ body {
 
 @media screen and (max-width: 768px) {
   .nvBtns {
+    position: relative;
+    margin-left: auto;
+    z-index: 99999;
+  }
+
+  .afterClick {
     position: fixed;
     right: 5%;
+    top: 5%;
     z-index: 99999;
   }
 
@@ -237,6 +244,10 @@ body {
   -webkit-transform: translateX(67%);
 }
 
+#section--2 {
+  height: 100vh;
+}
+
 .se2Content {
   margin-top: 4rem;
 }
@@ -245,6 +256,8 @@ body {
   font-size: 2rem;
   font-family: "Poppins";
   margin-bottom: -1.5rem;
+  font-weight: 400;
+  opacity: 0.8;
 }
 .se2Content h1 {
   color: #FFFFFF;
@@ -257,6 +270,8 @@ body {
   color: #FFFFFF;
   font-size: 1.3rem;
   margin-top: 2%;
+  font-weight: 400;
+  opacity: 0.7;
 }
 .se2Content h6 em {
   color: red;
@@ -266,6 +281,8 @@ body {
 .se2Content .FindMeText {
   font-size: 1.5rem;
   margin-top: 2%;
+  font-weight: 400;
+  opacity: 0.7;
 }
 .se2Content i {
   font-size: 3rem;
@@ -274,9 +291,10 @@ body {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   margin-right: 3rem;
+  opacity: 0.7;
 }
 .se2Content i:hover {
-  color: #d1d1d1;
+  color: red;
   cursor: pointer;
 }
 
@@ -348,6 +366,7 @@ body {
   margin-top: 3rem;
   background-color: #040221;
   width: 100%;
+  height: 100vh;
 }
 
 .aboutSection {
@@ -382,6 +401,67 @@ body {
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#section--4 {
+  width: 100%;
+  height: 100vh;
+  background-color: #040221;
+  position: relative;
+}
+
+.portSectionH {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.portSectionH h1 {
+  color: #FFFFFF;
+  font-size: clamp(2.5rem, 4vw , 10rem);
+  font-weight: 400;
+}
+
+.portBtn button {
+  stroke: #FFFFFF;
+  stroke-width: 2px;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 100;
+  width: clamp(1.9rem, 3vw , 10rem);
+  height: clamp(1.9rem, 3vw , 10rem);
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  color: #FFFFFF;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.portBtn button.btnActive {
+  background-color: #FF0513;
+}
+
+.portHeaderLinks a {
+  color: #FFFFFF;
+  margin-right: 1rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: clamp(.9rem, 2vw , 2rem);
+  font-weight: 300;
+  opacity: 0.7;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.portHeaderLinks a.activedLink {
+  color: #ff0000;
+  opacity: 1;
 }
 
 @media screen and (max-width: 384px) {

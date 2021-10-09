@@ -12,13 +12,14 @@ $sec3BG: #040221;
           box-sizing: border-box;
   outline: none;
   font-family: "Poppins";
-  font-size: 62.5%;
   box-shadow: none;
 
 }
 
 html{
   scroll-behavior: smooth;
+  font-size: 62.5%;
+
 }
 
 body {
@@ -137,10 +138,17 @@ body {
 @media screen and (max-width: 768px) {
   
   .nvBtns{
+    position: relative;
+    margin-left: auto;
+    z-index: 99999;
+
+  }
+  .afterClick{
     position: fixed;
     right: 5%;
+    top: 5%;
     z-index: 99999;
- 
+    
 
   }
   .nvBtn{
@@ -242,7 +250,9 @@ body {
         
 }
 
-
+#section--2{
+  height: 100vh;
+}
 .se2Content{
   margin-top: 4rem;
   p{
@@ -250,6 +260,8 @@ body {
     font-size: 2rem;
     font-family: 'Poppins';
     margin-bottom: -1.5rem;
+    font-weight: 400;
+    opacity: .8;
   }
   h1{
     color: $wh-color;
@@ -263,6 +275,10 @@ body {
     color: $wh-color;
     font-size: 1.3rem;
     margin-top: 2%;
+    font-weight: 400;
+    opacity: .7;
+
+
     em{
       color:red;
       font-size: 1.3rem;
@@ -273,6 +289,8 @@ body {
   .FindMeText{
     font-size: 1.5rem;
     margin-top: 2%;
+    font-weight: 400;
+    opacity: .7;
   }
   i{
     font-size:3rem;
@@ -280,9 +298,11 @@ body {
     color: $wh-color;
     transition: all 0.3s ease-in-out;
     margin-right: 3rem ;
+    opacity: .7;
     &:hover{
-      color: $hov-color;
+      color: red;
       cursor: pointer;
+
     }
   }
 }
@@ -356,10 +376,12 @@ button{
   margin-top: 3rem;
   background-color: $sec3BG;
   width: 100%;
+  height: 100vh;
 
 }
 .aboutSection{
 margin-top: 10%;
+
 
 }
 
@@ -398,9 +420,70 @@ p{
 }
 
 
+#section--4{
+  width: 100%;
+  height: 100vh;
+  background-color: $sec3BG;
+  position: relative;
+ 
+
+}
+.portSectionH{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h1{
+    color: $wh-color;
+    font-size: clamp(2.5rem, 4vw , 10rem);
+    font-weight: 400;
+  }
+}
+.portBtn{
+
+  button{
+   stroke: #FFFFFF;
+   stroke-width: 2px;
+   stroke-linecap: butt;
+   stroke-linejoin: miter;
+   stroke-miterlimit: 100;
+   width: clamp(1.9rem, 3vw , 10rem);
+   height: clamp(1.9rem, 3vw , 10rem);
+   background-color: transparent;
+   border: 1px solid #FFFFFF;
+   border-radius: 50%;
+   color: $wh-color;
+   margin-left: .5rem;
+   cursor: pointer;
+   transition: all .3s ease-in-out;
 
 
+  
 
+  }
+  button.btnActive{
+    background-color: #FF0513;
+
+  }
+}
+
+.portHeaderLinks{
+a{
+  color: $wh-color;
+  margin-right: 1rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: clamp(.9rem, 2vw , 2rem);
+  font-weight: 300;
+  opacity: .7;
+  transition: all .3s ease-in-out;
+
+
+}  
+a.activedLink{
+  color: #ff0000;
+  opacity: 1;
+  }
+}
 
 
 
@@ -467,4 +550,5 @@ p{
       background-color: #FFFFFF;
       color:#FF0513;
     }
+    
   }
