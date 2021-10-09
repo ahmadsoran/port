@@ -422,7 +422,7 @@ p{
 
 #section--4{
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: $sec3BG;
   position: relative;
  
@@ -432,22 +432,35 @@ p{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   h1{
     color: $wh-color;
-    font-size: clamp(2.5rem, 4vw , 10rem);
+    font-size: clamp(3.5rem, 5vw , 10rem);
     font-weight: 400;
+    &::after{
+      content: '';
+      background-color: red;
+      width: clamp(1.5rem, 19vw , 60rem);
+      height: 1px;
+      position: absolute;
+      margin-left: 2.5%;
+      bottom: 40%;
+
+    
+    }
   }
 }
-.portBtn{
 
+.portBtn{
+  
   button{
    stroke: #FFFFFF;
    stroke-width: 2px;
    stroke-linecap: butt;
    stroke-linejoin: miter;
    stroke-miterlimit: 100;
-   width: clamp(1.9rem, 3vw , 10rem);
-   height: clamp(1.9rem, 3vw , 10rem);
+   width: clamp(2.9rem, 4vw , 10rem);
+   height: clamp(2.9rem, 4vw , 10rem);
    background-color: transparent;
    border: 1px solid #FFFFFF;
    border-radius: 50%;
@@ -467,12 +480,13 @@ p{
 }
 
 .portHeaderLinks{
+  margin-bottom: 5%;
 a{
   color: $wh-color;
   margin-right: 1rem;
   text-decoration: none;
   text-transform: capitalize;
-  font-size: clamp(.9rem, 2vw , 2rem);
+  font-size: clamp(1rem, 2vw , 3rem);
   font-weight: 300;
   opacity: .7;
   transition: all .3s ease-in-out;
@@ -485,9 +499,49 @@ a.activedLink{
   }
 }
 
+.sec4Content{
+  padding: 2.5%;
+}
+.card{
+  width: 100%;
+  height: 25rem;
+ background-color: #ff0000;
+  border-radius: 2rem;
+  background-image: url(assets/img/comeingsoon.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+}
 
 
+.customBTN1{
+  color: #FFFFFF;
+  stroke-width: 2px;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 100;
+  stroke-dashoffset: 0%;
+  width: clamp(3rem, 100%, 30%);
+  padding: 3%;
+  margin: 3%;
+  border: white solid 2px;
+  border-radius: 4.5rem;
+  font-size: 1rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+  background: none;
+  cursor: pointer;
+  &:hover{
+    background-color: #FFFFFF;
+    color:#FF0513;
+  }
 
+  
+}
 
 @media screen and (max-width:384px) {
   
@@ -524,31 +578,10 @@ a.activedLink{
    
     transform: translateX(100%);
   }
+
+  .card{
+    margin-bottom: 7%;
+  }
   }
 
-  .customBTN1{
-    color: #FFFFFF;
-    stroke-width: 2px;
-    stroke-linecap: butt;
-    stroke-linejoin: miter;
-    stroke-miterlimit: 100;
-    stroke-dashoffset: 0%;
-    width: clamp(3rem, 100%, 30%);
-    padding: 3%;
-    margin: 3%;
-    border: white solid 2px;
-    border-radius: 4.5rem;
-    font-size: 1rem;
-    -webkit-transition: .3s;
-    transition: .3s;
-    -moz-transition: .3s;
-    -ms-transition: .3s;
-    -o-transition: .3s;
-    background: none;
-    cursor: pointer;
-    &:hover{
-      background-color: #FFFFFF;
-      color:#FF0513;
-    }
-    
-  }
+

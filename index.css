@@ -405,7 +405,7 @@ body {
 
 #section--4 {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: #040221;
   position: relative;
 }
@@ -420,11 +420,21 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 .portSectionH h1 {
   color: #FFFFFF;
-  font-size: clamp(2.5rem, 4vw , 10rem);
+  font-size: clamp(3.5rem, 5vw , 10rem);
   font-weight: 400;
+}
+.portSectionH h1::after {
+  content: "";
+  background-color: red;
+  width: clamp(1.5rem, 19vw , 60rem);
+  height: 1px;
+  position: absolute;
+  margin-left: 2.5%;
+  bottom: 40%;
 }
 
 .portBtn button {
@@ -433,8 +443,8 @@ body {
   stroke-linecap: butt;
   stroke-linejoin: miter;
   stroke-miterlimit: 100;
-  width: clamp(1.9rem, 3vw , 10rem);
-  height: clamp(1.9rem, 3vw , 10rem);
+  width: clamp(2.9rem, 4vw , 10rem);
+  height: clamp(2.9rem, 4vw , 10rem);
   background-color: transparent;
   border: 1px solid #FFFFFF;
   border-radius: 50%;
@@ -448,12 +458,15 @@ body {
   background-color: #FF0513;
 }
 
+.portHeaderLinks {
+  margin-bottom: 5%;
+}
 .portHeaderLinks a {
   color: #FFFFFF;
   margin-right: 1rem;
   text-decoration: none;
   text-transform: capitalize;
-  font-size: clamp(.9rem, 2vw , 2rem);
+  font-size: clamp(1rem, 2vw , 3rem);
   font-weight: 300;
   opacity: 0.7;
   -webkit-transition: all 0.3s ease-in-out;
@@ -462,6 +475,48 @@ body {
 .portHeaderLinks a.activedLink {
   color: #ff0000;
   opacity: 1;
+}
+
+.sec4Content {
+  padding: 2.5%;
+}
+
+.card {
+  width: 100%;
+  height: 25rem;
+  background-color: #ff0000;
+  border-radius: 2rem;
+  background-image: url(assets/img/comeingsoon.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+.customBTN1 {
+  color: #FFFFFF;
+  stroke-width: 2px;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 100;
+  stroke-dashoffset: 0%;
+  width: clamp(3rem, 100%, 30%);
+  padding: 3%;
+  margin: 3%;
+  border: white solid 2px;
+  border-radius: 4.5rem;
+  font-size: 1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  background: none;
+  cursor: pointer;
+}
+.customBTN1:hover {
+  background-color: #FFFFFF;
+  color: #FF0513;
 }
 
 @media screen and (max-width: 384px) {
@@ -495,29 +550,8 @@ body {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
   }
-}
-.customBTN1 {
-  color: #FFFFFF;
-  stroke-width: 2px;
-  stroke-linecap: butt;
-  stroke-linejoin: miter;
-  stroke-miterlimit: 100;
-  stroke-dashoffset: 0%;
-  width: clamp(3rem, 100%, 30%);
-  padding: 3%;
-  margin: 3%;
-  border: white solid 2px;
-  border-radius: 4.5rem;
-  font-size: 1rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-  background: none;
-  cursor: pointer;
-}
-.customBTN1:hover {
-  background-color: #FFFFFF;
-  color: #FF0513;
+
+  .card {
+    margin-bottom: 7%;
+  }
 }/*# sourceMappingURL=index.css.map */
