@@ -478,7 +478,7 @@ body {
 }
 
 .sec4Content {
-  margin: 1% 0%;
+  padding: 2.5%;
   border-radius: 2rem;
   overflow: hidden;
 }
@@ -608,5 +608,9 @@ body {
 
   .card {
     margin-bottom: 7%;
+  }
+
+  .sec4Content {
+    margin: 1% 0%;
   }
 }/*# sourceMappingURL=index.css.map */
