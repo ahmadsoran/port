@@ -4,7 +4,7 @@ $hov-color: #d1d1d1;
 $bg-linear-one: rgb(95, 64, 207) ;
 $bg-linear-two: rgb(45, 0, 128) ;
 $sec3BG: #040221;
-$bgCardHover: #ffffff62;
+$bgCardHover: #000000b0;
 * {
   margin: 0;
   padding: 0;
@@ -503,7 +503,6 @@ a.activedLink{
   padding: 2.5%;
   border-radius: 2rem;
   overflow: hidden;
-
 }
 
 .hoverCard{
@@ -527,7 +526,7 @@ a.activedLink{
 
 
   h1{
-    color: black;
+    color: $wh-color;
     font-size: 2rem;
     font-weight: 500;
     &::before{
@@ -541,9 +540,10 @@ a.activedLink{
     }
   }
   p{
-    color: black;
+    color: $wh-color;
   }
 }
+
 
 .card{
   width: 100%;
@@ -555,7 +555,10 @@ a.activedLink{
   background-repeat: no-repeat;
   background-color: black;
   overflow: hidden;
-
+&:hover{
+  background-size: 110%;
+  
+}
   &:hover .hoverCard{
     bottom: 0%;
     overflow: visible;

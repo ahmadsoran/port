@@ -484,7 +484,7 @@ body {
 }
 
 .hoverCard {
-  background-color: #ffffff62;
+  background-color: #000000b0;
   width: 100%;
   height: 100%;
   border-radius: 2rem;
@@ -505,7 +505,7 @@ body {
   transition: all 0.7s ease 0.3s;
 }
 .hovCtext h1 {
-  color: black;
+  color: #FFFFFF;
   font-size: 2rem;
   font-weight: 500;
 }
@@ -519,7 +519,7 @@ body {
   top: 40%;
 }
 .hovCtext p {
-  color: black;
+  color: #FFFFFF;
 }
 
 .card {
@@ -532,6 +532,9 @@ body {
   background-repeat: no-repeat;
   background-color: black;
   overflow: hidden;
+}
+.card:hover {
+  background-size: 110%;
 }
 .card:hover .hoverCard {
   bottom: 0%;
