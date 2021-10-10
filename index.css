@@ -424,13 +424,13 @@ body {
 }
 .portSectionH h1 {
   color: #FFFFFF;
-  font-size: clamp(3.5rem, 5vw , 10rem);
+  font-size: clamp(3.5rem, 5vw, 10rem);
   font-weight: 400;
 }
 .portSectionH h1::after {
   content: "";
   background-color: red;
-  width: clamp(1.5rem, 19vw , 60rem);
+  width: clamp(1.5rem, 19vw, 60rem);
   height: 1px;
   position: absolute;
   margin-left: 2.5%;
@@ -443,8 +443,8 @@ body {
   stroke-linecap: butt;
   stroke-linejoin: miter;
   stroke-miterlimit: 100;
-  width: clamp(2.9rem, 4vw , 10rem);
-  height: clamp(2.9rem, 4vw , 10rem);
+  width: clamp(2.9rem, 4vw, 10rem);
+  height: clamp(2.9rem, 4vw, 10rem);
   background-color: transparent;
   border: 1px solid #FFFFFF;
   border-radius: 50%;
@@ -466,7 +466,7 @@ body {
   margin-right: 1rem;
   text-decoration: none;
   text-transform: capitalize;
-  font-size: clamp(1rem, 2vw , 3rem);
+  font-size: clamp(1rem, 2vw, 3rem);
   font-weight: 300;
   opacity: 0.7;
   -webkit-transition: all 0.3s ease-in-out;
@@ -512,7 +512,7 @@ body {
 .hovCtext h1::before {
   content: "";
   background-color: #ff0000;
-  width: clamp(.1rem , 100% , 1.5rem);
+  width: clamp(.1rem, 100%, 1.5rem);
   height: 1px;
   position: absolute;
   left: 0%;
@@ -574,8 +574,119 @@ body {
   color: #FF0513;
 }
 
+#section--5 {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.headerTitle {
+  padding: 2rem 0rem;
+}
+.headerTitle h1 {
+  color: #FFFFFF;
+  font-size: clamp(2rem, 3vw , 6rem);
+  text-align: center;
+  font-weight: 600;
+}
+
+.s5headerText {
+  color: #FFFFFF;
+  font-size: clamp(.5rem, 1.5vw , 2rem);
+  padding: 0rem 3rem;
+  text-align: center;
+  line-height: 200%;
+  font-weight: 300;
+  opacity: 0.7;
+  margin-bottom: 10rem;
+}
+
+.s5contentTextSide {
+  display: grid;
+  place-items: center;
+}
+.s5contentTextSide p {
+  margin-top: 3rem;
+  color: #FFFFFF;
+  font-size: 3rem;
+  padding: 0rem 3rem;
+  text-align: left;
+  font-size: clamp(.8rem, 2vw , 3.0rem);
+  opacity: 0.7;
+}
+
+.s5contentAnimationSide {
+  margin-top: 6rem;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.s5contentAnimationSide img {
+  width: 100%;
+  height: auto;
+}
+
+#img1 {
+  width: clamp(6rem , 10vw , 10rem);
+  height: clamp(6rem , 10vw , 10rem);
+  border-radius: 50%;
+  position: absolute;
+  top: -20%;
+  right: 8%;
+  border: clamp(.1rem , 1vw , .7rem) solid #FF0513;
+}
+
+#img2 {
+  width: clamp(5rem , 7vw , 7.6rem);
+  height: clamp(5rem , 7vw , 7.6rem);
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+#img3 {
+  width: clamp(4rem , 6vw , 6rem);
+  height: clamp(4rem , 6vw , 6rem);
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+
+#img4 {
+  width: clamp(2.5rem , 4vw , 4rem);
+  height: clamp(2.5rem , 4vw , 4rem);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 35%;
+  left: 25%;
+}
+
+#img5 {
+  width: clamp(6rem , 10vw , 10rem);
+  height: clamp(6rem , 10vw , 10rem);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0%;
+  left: 40%;
+}
+
+#img6 {
+  width: clamp(5rem , 7vw , 7.6rem);
+  height: clamp(5rem , 7vw , 7.6rem);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0%;
+  right: 23%;
+}
+
 @media screen and (max-width: 384px) {
-  .se2Content p, .se2Content h1, .se2Content h6, .se2Content i, .se2Content .btnSocial button {
+  .se2Content p,
+.se2Content h1,
+.se2Content h6,
+.se2Content i,
+.se2Content .btnSocial button {
     text-align: center;
   }
   .se2Content h1 {
