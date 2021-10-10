@@ -12,6 +12,7 @@ const portLink = document.querySelectorAll('.portHeaderLinks a')
 const portLinkParent = document.querySelector('.portHeaderLinks')
 portLinkParent.addEventListener('click',function(e) {
 const clickedLink = e.target.closest('a');
+
 e.preventDefault();
 if (!clickedLink) return;
 
@@ -19,7 +20,7 @@ portLink.forEach(e => e.classList.remove('activedLink'));
 clickedLink.classList.add('activedLink')
 });
 
-
+// ---------------------btn---------------------------
 const portBtn = document.querySelectorAll('.portBtn button')
 const portBtnParent = document.querySelector('.portBtn')
 portBtnParent.addEventListener('click',function(e) {
@@ -28,8 +29,19 @@ e.preventDefault();
 if (!clickedBtn) return;
 
 portBtn.forEach(e => e.classList.remove('btnActive'));
-clickedBtn.classList.add('btnActive')
+clickedBtn.classList.add('btnActive');
+
+let timer = 3000;
+let timeoutActiveClass = setTimeout( function (){
+    clickedBtn.classList.remove('btnActive');
+}  , timer);
+
+
+
+
+
 });
+
 
 
 function navMobile (){

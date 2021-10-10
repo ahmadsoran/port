@@ -451,8 +451,8 @@ body {
   color: #FFFFFF;
   margin-left: 0.5rem;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .portBtn button.btnActive {
   background-color: #FF0513;
@@ -481,16 +481,66 @@ body {
   padding: 2.5%;
 }
 
+.hoverCard {
+  background-color: #ffffff62;
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  position: relative;
+  bottom: -10%;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.hovCtext {
+  position: absolute;
+  padding: 5%;
+  bottom: -10%;
+  opacity: 0;
+  -webkit-transition: all 0.7s ease 0.3s;
+  transition: all 0.7s ease 0.3s;
+}
+.hovCtext h1 {
+  color: black;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.hovCtext h1::before {
+  content: "";
+  background-color: #ff0000;
+  width: clamp(.1rem , 100% , 1.5rem);
+  height: 1px;
+  position: absolute;
+  left: 0%;
+  top: 40%;
+}
+.hovCtext p {
+  color: black;
+}
+
 .card {
   width: 100%;
   height: 25rem;
-  background-color: #ff0000;
   border-radius: 2rem;
   background-image: url(assets/img/comeingsoon.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: black;
+  overflow: hidden;
+}
+.card:hover .hoverCard {
+  bottom: 0%;
+  overflow: visible;
+  opacity: 1;
+  z-index: 10;
+}
+.card:hover .hovCtext {
+  bottom: 0%;
+  opacity: 1;
+  z-index: 10;
 }
 
 .customBTN1 {
