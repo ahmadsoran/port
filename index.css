@@ -8,7 +8,6 @@
   font-family: "Poppins";
   -webkit-box-shadow: none;
           box-shadow: none;
-  text-transform: capitalize;
 }
 
 html {
@@ -27,6 +26,7 @@ body {
 .container {
   max-width: 1300px;
   min-width: 200px;
+  margin: auto;
   padding: 2% 3%;
 }
 
@@ -124,16 +124,11 @@ body {
   color: #d1d1d1;
 }
 
-.nvBtns {
-  display: none;
-}
-
 @media screen and (max-width: 768px) {
   .nvBtns {
-    display: block;
     position: relative;
     margin-left: auto;
-    z-index: 9999;
+    z-index: 99999;
   }
 
   .afterClick {
@@ -179,8 +174,9 @@ body {
             clip-path: circle(0px at 50%);
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
+    overflow: visible;
     visibility: hidden;
-    z-index: -111;
+    z-index: 1111;
     margin-top: -1%;
   }
 
@@ -192,7 +188,6 @@ body {
     -webkit-clip-path: circle(100%);
             clip-path: circle(100%);
     visibility: visible;
-    z-index: 1111;
   }
 
   .nvBtn.AnimNvBtn {
@@ -251,7 +246,6 @@ body {
 
 #section--2 {
   height: 100vh;
-  padding: 3% 0%;
 }
 
 .se2Content {
@@ -373,7 +367,6 @@ body {
   background-color: #040221;
   width: 100%;
   height: 100vh;
-  padding: 3% 0%;
 }
 
 .aboutSection {
@@ -394,12 +387,18 @@ body {
 
 .devimg {
   width: 100%;
-  height: 100%;
-  min-height: clamp(20vh , 50vw , 50vh);
-  border: clamp(1.5rem , 3vw ,3rem) #0E0C38 solid;
+  height: 50vh;
+  fill: #0E0C38;
+  stroke-width: 1rem;
+  stroke-opacity: 1;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 100px;
+  stroke-dasharray: 0;
+  border: 3rem #0E0C38 solid;
   padding: 1rem;
   background-image: url(assets/img/1602738901601.jpg);
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -409,7 +408,6 @@ body {
   height: auto;
   background-color: #040221;
   position: relative;
-  padding: 3% 0%;
 }
 
 .portSectionH {
@@ -426,13 +424,13 @@ body {
 }
 .portSectionH h1 {
   color: #FFFFFF;
-  font-size: clamp(3.5rem, 5vw, 10rem);
+  font-size: clamp(3.5rem, 5vw , 10rem);
   font-weight: 400;
 }
 .portSectionH h1::after {
   content: "";
   background-color: red;
-  width: clamp(1.5rem, 19vw, 60rem);
+  width: clamp(1.5rem, 19vw , 60rem);
   height: 1px;
   position: absolute;
   margin-left: 2.5%;
@@ -445,8 +443,8 @@ body {
   stroke-linecap: butt;
   stroke-linejoin: miter;
   stroke-miterlimit: 100;
-  width: clamp(2.9rem, 4vw, 10rem);
-  height: clamp(2.9rem, 4vw, 10rem);
+  width: clamp(2.9rem, 4vw , 10rem);
+  height: clamp(2.9rem, 4vw , 10rem);
   background-color: transparent;
   border: 1px solid #FFFFFF;
   border-radius: 50%;
@@ -468,7 +466,7 @@ body {
   margin-right: 1rem;
   text-decoration: none;
   text-transform: capitalize;
-  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  font-size: clamp(1rem, 2vw , 3rem);
   font-weight: 300;
   opacity: 0.7;
   -webkit-transition: all 0.3s ease-in-out;
@@ -481,12 +479,10 @@ body {
 
 .sec4Content {
   padding: 2.5%;
-  border-radius: 2rem;
-  overflow: hidden;
 }
 
 .hoverCard {
-  background-color: #000000b0;
+  background-color: #ffffff62;
   width: 100%;
   height: 100%;
   border-radius: 2rem;
@@ -503,25 +499,25 @@ body {
   padding: 5%;
   bottom: -10%;
   opacity: 0;
-  -webkit-transition: all 0.5s ease 0.4s;
-  transition: all 0.5s ease 0.4s;
+  -webkit-transition: all 0.7s ease 0.3s;
+  transition: all 0.7s ease 0.3s;
 }
 .hovCtext h1 {
-  color: #FFFFFF;
+  color: black;
   font-size: 2rem;
   font-weight: 500;
 }
 .hovCtext h1::before {
   content: "";
   background-color: #ff0000;
-  width: clamp(.1rem, 100%, 1.5rem);
+  width: clamp(.1rem , 100% , 1.5rem);
   height: 1px;
   position: absolute;
   left: 0%;
   top: 40%;
 }
 .hovCtext p {
-  color: #FFFFFF;
+  color: black;
 }
 
 .card {
@@ -534,9 +530,6 @@ body {
   background-repeat: no-repeat;
   background-color: black;
   overflow: hidden;
-}
-.card:hover {
-  background-size: 110%;
 }
 .card:hover .hoverCard {
   bottom: 0%;
@@ -576,180 +569,8 @@ body {
   color: #FF0513;
 }
 
-#section--5 {
-  width: 100%;
-  height: auto;
-  position: relative;
-  padding: 3% 0%;
-}
-
-.headerTitle {
-  padding: 2rem 0rem;
-}
-.headerTitle h1 {
-  color: #FFFFFF;
-  font-size: clamp(2rem, 4vw, 4rem);
-  text-align: center;
-  font-weight: 600;
-  position: relative;
-}
-.headerTitle h1::after {
-  content: "";
-  width: clamp(3.5rem, 20vw, 20rem);
-  height: 1px;
-  background-color: red;
-  position: absolute;
-  bottom: -50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.s5headerText {
-  color: #FFFFFF;
-  font-size: clamp(.5rem, 1.5vw, 1.5rem);
-  padding: 0rem 3rem;
-  text-align: center;
-  line-height: 200%;
-  font-weight: 300;
-  opacity: 0.7;
-  margin-bottom: 10rem;
-  margin-top: 3%;
-}
-
-.s5contentTextSide {
-  display: grid;
-  place-items: center;
-}
-.s5contentTextSide p {
-  margin-top: 5rem;
-  color: #FFFFFF;
-  font-size: 3rem;
-  padding: 0rem 3rem;
-  text-align: left;
-  font-size: clamp(.8rem, 2vw, 3.0rem);
-  opacity: 0.7;
-}
-
-.s5contentAnimationSide {
-  margin-top: 6rem;
-  display: grid;
-  place-items: center;
-  position: relative;
-}
-.s5contentAnimationSide img {
-  width: 100%;
-  height: auto;
-}
-
-#img1 {
-  width: clamp(6rem, 10vw, 10rem);
-  height: clamp(6rem, 10vw, 10rem);
-  border-radius: 50%;
-  position: absolute;
-  top: -20%;
-  right: 8%;
-  border: clamp(.1rem, 1vw, .7rem) solid #FF0513;
-}
-
-#img2 {
-  width: clamp(5rem, 7vw, 7.6rem);
-  height: clamp(5rem, 7vw, 7.6rem);
-  border-radius: 50%;
-  position: absolute;
-  top: 10%;
-  left: 10%;
-}
-
-#img3 {
-  width: clamp(4rem, 6vw, 6rem);
-  height: clamp(4rem, 6vw, 6rem);
-  border-radius: 50%;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-}
-
-#img4 {
-  width: clamp(2.5rem, 4vw, 4rem);
-  height: clamp(2.5rem, 4vw, 4rem);
-  border-radius: 50%;
-  position: absolute;
-  bottom: 35%;
-  left: 25%;
-}
-
-#img5 {
-  width: clamp(6rem, 10vw, 10rem);
-  height: clamp(6rem, 10vw, 10rem);
-  border-radius: 50%;
-  position: absolute;
-  bottom: 0%;
-  left: 40%;
-}
-
-#img6 {
-  width: clamp(5rem, 7vw, 7.6rem);
-  height: clamp(5rem, 7vw, 7.6rem);
-  border-radius: 50%;
-  position: absolute;
-  bottom: 0%;
-  right: 23%;
-}
-
-#section--6 {
-  background-color: #040221;
-  padding-top: 10%;
-  position: relative;
-  overflow: hidden;
-  padding: 3% 0%;
-}
-
-.s6headerTitle {
-  padding: 2rem 0rem;
-  overflow: hidden;
-}
-.s6headerTitle h1 {
-  color: #FFFFFF;
-  font-size: clamp(2rem, 4vw, 4rem);
-  text-align: center;
-  font-weight: 600;
-}
-.s6headerTitle h1::after {
-  content: "";
-  width: clamp(1.5rem, 10vw, 10rem);
-  height: 1px;
-  background-color: red;
-  position: absolute;
-  top: 13%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) rotate(90deg);
-          transform: translate(-50%, -50%) rotate(90deg);
-}
-
-.s6headerText {
-  color: #FFFFFF;
-  font-size: clamp(.5rem, 1.5vw, 1.5rem);
-  padding: 0rem 3rem;
-  text-align: center;
-  line-height: 200%;
-  font-weight: 200;
-  opacity: 0.7;
-  margin-bottom: 10rem;
-  margin-top: 1%;
-}
-
-@media screen and (max-height: 400px) {
-  #section--3 {
-    height: auto;
-  }
-}
-@media screen and (max-width: 400px) {
-  .se2Content p,
-.se2Content h1,
-.se2Content h6,
-.se2Content i,
-.se2Content .btnSocial button {
+@media screen and (max-width: 384px) {
+  .se2Content p, .se2Content h1, .se2Content h6, .se2Content i, .se2Content .btnSocial button {
     text-align: center;
   }
   .se2Content h1 {
@@ -767,16 +588,12 @@ body {
             filter: brightness(60%) saturate(0%);
   }
 
-  #section--3 {
-    height: auto;
-  }
-
   .shape {
     display: none;
   }
 
-  .mg {
-    margin: 3% 0%;
+  .devimg {
+    margin-top: 3rem;
   }
 
   .customBTN1 {
@@ -786,24 +603,5 @@ body {
 
   .card {
     margin-bottom: 7%;
-  }
-
-  .sec4Content {
-    margin: 1% 0%;
-  }
-
-  .s6headerTitle {
-    padding: 2rem 0rem;
-  }
-  .s6headerTitle h1 {
-    color: #FFFFFF;
-    font-size: clamp(2rem, 3vw, 6rem);
-    text-align: center;
-    font-weight: 600;
-  }
-  .s6headerTitle h1::after {
-    content: "";
-    width: clamp(3.5rem, 15vw, 15rem);
-    top: 13%;
   }
 }/*# sourceMappingURL=index.css.map */
