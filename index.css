@@ -180,8 +180,8 @@ body {
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
     visibility: hidden;
-    z-index: -111;
     margin-top: -1%;
+    z-index: 1111;
   }
 
   .nav-item a.fade {
@@ -192,7 +192,6 @@ body {
     -webkit-clip-path: circle(100%);
             clip-path: circle(100%);
     visibility: visible;
-    z-index: 1111;
   }
 
   .nvBtn.AnimNvBtn {
