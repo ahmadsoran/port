@@ -493,8 +493,8 @@ body {
   bottom: -10%;
   opacity: 0;
   z-index: -1;
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .hovCtext {
