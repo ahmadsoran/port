@@ -783,136 +783,136 @@ body {
   right: 23%;
 }
 
-#section--6 {
-  background-color: $sec3BG;
-  padding-top: 10%;
-  position: relative;
-  overflow: hidden;
-  padding: 3% 0%;
+// #section--6 {
+//   background-color: $sec3BG;
+//   padding-top: 10%;
+//   position: relative;
+//   overflow: hidden;
+//   padding: 3% 0%;
 
-}
-.s6headerTitle {
-  padding: 2rem 0rem;
-  overflow: hidden;
+// }
+// .s6headerTitle {
+//   padding: 2rem 0rem;
+//   overflow: hidden;
 
 
-  h1 {
-    color: #FFFFFF;
-    font-size: clamp(2rem, 4vw, 4rem);
-    text-align: center;
-    font-weight: 600;
+//   h1 {
+//     color: #FFFFFF;
+//     font-size: clamp(2rem, 4vw, 4rem);
+//     text-align: center;
+//     font-weight: 600;
     
 
-    &::after {
-      content: '';
-      width: clamp(5.5rem, 13vw, 13rem);
-      height: 1px;
-      background-color: red;
-      position: absolute;
-      top: 3%;
-      left: 50%;
-      transform: translate(-50%, -50%) rotate(90deg);
+//     &::after {
+//       content: '';
+//       width: clamp(5.5rem, 13vw, 13rem);
+//       height: 1px;
+//       background-color: red;
+//       position: absolute;
+//       top: 3%;
+//       left: 50%;
+//       transform: translate(-50%, -50%) rotate(90deg);
 
 
-    }
-  }
-}
-.s6headerText{
-  color: $wh-color;
-  font-size: clamp(.5rem, 1.5vw, 1.5rem);
-  padding: 0rem 3rem;
-  text-align: center;
-  line-height: 200%;
-  font-weight: 200;
-  opacity: .7;
-  margin-bottom: 10rem;
-  margin-top: 1%;
+//     }
+//   }
+// }
+// .s6headerText{
+//   color: $wh-color;
+//   font-size: clamp(.5rem, 1.5vw, 1.5rem);
+//   padding: 0rem 3rem;
+//   text-align: center;
+//   line-height: 200%;
+//   font-weight: 200;
+//   opacity: .7;
+//   margin-bottom: 10rem;
+//   margin-top: 1%;
   
 
-}
+// }
 
 
-.formSection{
-transform: translateY(-10%);
-  form{
-    width: 100%;
-    display: grid;
-    place-items: center;
-    input{
-      width: 100%;
-      margin: 1% 0%;
-      padding: 3%;
-      opacity: .8;
-      border-radius: 3px;
-    }
-   textarea{
-    margin-top: 1%;
-     width: 100%;
-     height: 13rem;
-    padding: 2%;
-    opacity: .8;
-    border-radius: 3px;
+// .formSection{
+// transform: translateY(-10%);
+//   form{
+//     width: 100%;
+//     display: grid;
+//     place-items: center;
+//     input{
+//       width: 100%;
+//       margin: 1% 0%;
+//       padding: 3%;
+//       opacity: .8;
+//       border-radius: 3px;
+//     }
+//    textarea{
+//     margin-top: 1%;
+//      width: 100%;
+//      height: 13rem;
+//     padding: 2%;
+//     opacity: .8;
+//     border-radius: 3px;
   
 
-   }
-   button{
-    color: #FFFFFF;
-    border: none;
-    border-radius: 4.5rem;
-    margin-top: 2rem;
-    cursor: pointer;
-    padding: 2% 5%;
-    background-color: #FF0513;
-   }
-  }
-}
+//    }
+//    button{
+//     color: #FFFFFF;
+//     border: none;
+//     border-radius: 4.5rem;
+//     margin-top: 2rem;
+//     cursor: pointer;
+//     padding: 2% 5%;
+//     background-color: #FF0513;
+//    }
+//   }
+// }
 
 
 
 
-#section--8{
-  background-color: #040B33;
-  color: $wh-color;
-  text-align: center;
-  hr{
-    background-color: #FFFFFF;
-    width: 100%;
-    color: #FFFFFF;
-    opacity: .2;
-   }
-  h1{
-    font-size: clamp(2.5rem , 6vw , 6rem);
-    font-weight: 500;
-  }
-}
-.footerLinks{
-  color: $wh-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+// #section--8{
+//   background-color: #040B33;
+//   color: $wh-color;
+//   text-align: center;
+//   hr{
+//     background-color: #FFFFFF;
+//     width: 100%;
+//     color: #FFFFFF;
+//     opacity: .2;
+//    }
+//   h1{
+//     font-size: clamp(2.5rem , 6vw , 6rem);
+//     font-weight: 500;
+//   }
+// }
+// .footerLinks{
+//   color: $wh-color;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
 
- a{
-   color: $wh-color;
-   margin-left: 3px;
-   text-decoration: none;
-   font-weight: 200;
-   font-size: clamp(.7rem , 1.5vw , 1.6rem);
+//  a{
+//    color: $wh-color;
+//    margin-left: 3px;
+//    text-decoration: none;
+//    font-weight: 200;
+//    font-size: clamp(.7rem , 1.5vw , 1.6rem);
 
-   &:hover{
-     color: $hov-color;
-   }
- }  
-}
-.copy{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2%;
-  height: 100%;
-  p{
-    text-transform: capitalize;
-  }
-}
+//    &:hover{
+//      color: $hov-color;
+//    }
+//  }  
+// }
+// .copy{
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 2%;
+//   height: 100%;
+//   p{
+//     text-transform: capitalize;
+//   }
+// }
 
 
 
