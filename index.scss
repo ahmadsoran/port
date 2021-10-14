@@ -315,6 +315,7 @@ body {
 
   }
 
+  
   .FindMeText {
     font-size: 1.5rem;
     margin-top: 2%;
@@ -338,6 +339,16 @@ body {
   }
 }
 
+#imgSec2{
+  width: 100%;
+  mix-blend-mode: screen;
+  filter: brightness(30%) saturate(40%);
+  margin-top: -15%;
+  margin-left: -15%;
+  z-index: -3;
+  position: relative;
+
+}
 .btnSocial {
   display: flex;
 
@@ -386,18 +397,7 @@ body {
   }
 }
 
-.se2Content2 {
-  img {
-    width: 100%;
-    mix-blend-mode: screen;
-    filter: brightness(30%) saturate(40%);
-    margin-top: -15%;
-    margin-left: -15%;
-    z-index: 0;
 
-
-  }
-}
 
 .shape {
   width: 15vw;
@@ -604,7 +604,7 @@ body {
 
   }
 
-  &:hover .hoverCard {
+  &:hover  .hoverCard {
     bottom: 0%;
     overflow: visible;
     opacity: 1;
@@ -916,21 +916,32 @@ transform: translateY(-10%);
 
 
 
-@media screen and (max-height: 400px){
-#section--3{
+@media screen and (orientation: landscape){
+#section--3 , #section--2 {
   height: auto;
 }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width: 558px) {
+
+.se2social{
+ display: grid;
+ place-items: center;
+ margin: 1% 0%;
+ .icons{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+  }
 
   .se2Content {
 
     p,
     h1,
     h6,
-    i,
-    .btnSocial button {
+    i{
       text-align: center;
     }
 
@@ -939,10 +950,7 @@ transform: translateY(-10%);
       margin: 2rem 0rem;
     }
 
-    i {
-      margin-right: 2rem;
-      transform: translateX(100%);
-    }
+   
 
 
   }

@@ -303,6 +303,17 @@ body {
   cursor: pointer;
 }
 
+#imgSec2 {
+  width: 100%;
+  mix-blend-mode: screen;
+  -webkit-filter: brightness(30%) saturate(40%);
+          filter: brightness(30%) saturate(40%);
+  margin-top: -15%;
+  margin-left: -15%;
+  z-index: -3;
+  position: relative;
+}
+
 .btnSocial {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -345,16 +356,6 @@ body {
 .btnSocial button:nth-child(1):hover {
   background-color: #FFFFFF;
   border: #FFFFFF solid 2px;
-}
-
-.se2Content2 img {
-  width: 100%;
-  mix-blend-mode: screen;
-  -webkit-filter: brightness(30%) saturate(40%);
-          filter: brightness(30%) saturate(40%);
-  margin-top: -15%;
-  margin-left: -15%;
-  z-index: 0;
 }
 
 .shape {
@@ -828,27 +829,38 @@ body {
   text-transform: capitalize;
 }
 
-@media screen and (max-height: 400px) {
-  #section--3 {
+@media screen and (orientation: landscape) {
+  #section--3, #section--2 {
     height: auto;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 558px) {
+  .se2social {
+    display: grid;
+    place-items: center;
+    margin: 1% 0%;
+  }
+  .se2social .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
   .se2Content p,
 .se2Content h1,
 .se2Content h6,
-.se2Content i,
-.se2Content .btnSocial button {
+.se2Content i {
     text-align: center;
   }
   .se2Content h1 {
     line-height: 3rem;
     margin: 2rem 0rem;
-  }
-  .se2Content i {
-    margin-right: 2rem;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
   }
 
   .se2Content2 img {
