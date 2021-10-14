@@ -773,6 +773,62 @@ body {
   background-color: #FF0513;
 }
 
+#section--8 {
+  background-color: #040B33;
+  color: #FFFFFF;
+  text-align: center;
+}
+#section--8 hr {
+  background-color: #FFFFFF;
+  width: 100%;
+  color: #FFFFFF;
+  opacity: 0.2;
+}
+#section--8 h1 {
+  font-size: clamp(2.5rem , 6vw , 6rem);
+  font-weight: 500;
+}
+
+.footerLinks {
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footerLinks a {
+  color: #FFFFFF;
+  margin-left: 3px;
+  text-decoration: none;
+  font-weight: 200;
+  font-size: clamp(.7rem , 1.5vw , 1.6rem);
+}
+.footerLinks a:hover {
+  color: #d1d1d1;
+}
+
+.copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2%;
+  height: 100%;
+}
+.copy p {
+  text-transform: capitalize;
+}
+
 @media screen and (max-height: 400px) {
   #section--3 {
     height: auto;
@@ -824,6 +880,10 @@ body {
 
   .sec4Content {
     margin: 1% 0%;
+  }
+
+  .s5headerText {
+    margin-bottom: 0%;
   }
 
   .s6headerTitle h1::after {
