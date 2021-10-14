@@ -193,8 +193,9 @@ body {
     clip-path: circle(0px at 50%);
     transition: all 1s ease-in-out;
     visibility: hidden;
-    z-index: -111;
     margin-top: -1%;
+    z-index: 1111;
+
   }
 
   .nav-item a.fade {
@@ -204,7 +205,6 @@ body {
   .nav-item.open {
     clip-path: circle(100%);
     visibility: visible;
-    z-index: 1111;
 
   }
 
@@ -246,6 +246,7 @@ body {
 
   }
 }
+
 
 @media screen and (max-width: 1200px) {
   .layaer {
@@ -314,6 +315,7 @@ body {
 
   }
 
+  
   .FindMeText {
     font-size: 1.5rem;
     margin-top: 2%;
@@ -337,6 +339,16 @@ body {
   }
 }
 
+#imgSec2{
+  width: 100%;
+  mix-blend-mode: screen;
+  filter: brightness(30%) saturate(40%);
+  margin-top: -15%;
+  margin-left: -15%;
+  z-index: -3;
+  position: relative;
+
+}
 .btnSocial {
   display: flex;
 
@@ -385,18 +397,7 @@ body {
   }
 }
 
-.se2Content2 {
-  img {
-    width: 100%;
-    mix-blend-mode: screen;
-    filter: brightness(30%) saturate(40%);
-    margin-top: -15%;
-    margin-left: -15%;
-    z-index: 0;
 
-
-  }
-}
 
 .shape {
   width: 15vw;
@@ -432,7 +433,7 @@ body {
 
   p {
     color: $wh-color;
-    font-size: 1rem;
+    font-size: clamp(.8rem, 1.5vw, 1.5rem);
     font-weight: 200;
     opacity: .6;
 
@@ -603,7 +604,7 @@ body {
 
   }
 
-  &:hover .hoverCard {
+  &:hover  .hoverCard {
     bottom: 0%;
     overflow: visible;
     opacity: 1;
@@ -800,14 +801,15 @@ body {
     font-size: clamp(2rem, 4vw, 4rem);
     text-align: center;
     font-weight: 600;
+    
 
     &::after {
       content: '';
-      width: clamp(1.5rem, 10vw, 10rem);
+      width: clamp(5.5rem, 13vw, 13rem);
       height: 1px;
       background-color: red;
       position: absolute;
-      top: 13%;
+      top: 3%;
       left: 50%;
       transform: translate(-50%, -50%) rotate(90deg);
 
@@ -829,21 +831,117 @@ body {
 
 }
 
-@media screen and (max-height: 400px){
-#section--3{
+
+.formSection{
+transform: translateY(-10%);
+  form{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    input{
+      width: 100%;
+      margin: 1% 0%;
+      padding: 3%;
+      opacity: .8;
+      border-radius: 3px;
+    }
+   textarea{
+    margin-top: 1%;
+     width: 100%;
+     height: 13rem;
+    padding: 2%;
+    opacity: .8;
+    border-radius: 3px;
+  
+
+   }
+   button{
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4.5rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    padding: 2% 5%;
+    background-color: #FF0513;
+   }
+  }
+}
+
+
+
+
+#section--8{
+  background-color: #040B33;
+  color: $wh-color;
+  text-align: center;
+  hr{
+    background-color: #FFFFFF;
+    width: 100%;
+    color: #FFFFFF;
+    opacity: .2;
+   }
+  h1{
+    font-size: clamp(2.5rem , 6vw , 6rem);
+    font-weight: 500;
+  }
+}
+.footerLinks{
+  color: $wh-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ a{
+   color: $wh-color;
+   margin-left: 3px;
+   text-decoration: none;
+   font-weight: 200;
+   font-size: clamp(.7rem , 1.5vw , 1.6rem);
+
+   &:hover{
+     color: $hov-color;
+   }
+ }  
+}
+.copy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  height: 100%;
+  p{
+    text-transform: capitalize;
+  }
+}
+
+
+
+@media screen and (orientation: landscape){
+#section--3 , #section--2 {
   height: auto;
 }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width: 558px) {
+
+.se2social{
+ display: grid;
+ place-items: center;
+ margin: 1% 0%;
+ .icons{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+  }
 
   .se2Content {
 
     p,
     h1,
     h6,
-    i,
-    .btnSocial button {
+    i{
       text-align: center;
     }
 
@@ -852,10 +950,7 @@ body {
       margin: 2rem 0rem;
     }
 
-    i {
-      margin-right: 2rem;
-      transform: translateX(100%);
-    }
+   
 
 
   }
@@ -894,20 +989,18 @@ body {
 
   }
 
-  
+  .s5headerText{
+    margin-bottom: 0%;
+  }
 .s6headerTitle {
-  padding: 2rem 0rem;
 
   h1 {
-    color: #FFFFFF;
-    font-size: clamp(2rem, 3vw, 6rem);
-    text-align: center;
-    font-weight: 600;
+
 
     &::after {
       content: '';
-      width: clamp(3.5rem, 15vw, 15rem);
-      top: 13%;
+      width: clamp(5.5rem, 15vw, 15rem);
+      top: 3%;
 
     }
   }
