@@ -15,13 +15,14 @@ $bgCardHover: #000000b0;
   font-family: "Poppins";
   box-shadow: none;
   text-transform: capitalize;
-
+  
 }
 
 html {
   scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
   font-size: 62.5%;
-
+  
 }
 
 body {
@@ -30,25 +31,26 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #0E0C38;
-
-
+  
+  
 }
-
-
-
 
 
 .container {
-  max-width: 1300px;
-  min-width: 200px;
   padding: 2% 3%;
 }
+
+
+
+
 
 .navHead {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1;
+  // z-index: 1;
+
+  
 
 }
 
@@ -273,143 +275,59 @@ body {
 
 }
 
-#section--2 {
+#section--2{
+  background:  linear-gradient(0deg, $sec3BG 30%, $bg-linear-two 60%);;
+  width: 100%;
+  height: auto;
+  padding: 10% 0% 0% 0%;
+  overflow: hidden;
+
+}
+
+.myImage{
+  width: 105%;
+  margin-left: -2.5%;
   height: 100vh;
-  padding: 3% 0%;
+  background-image: url(assets/img/me2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(80%);
+  -webkit-filter: brightness(80%);
+  opacity: .7;
+  box-shadow: inset black 0px 0px 35px 10px , black 0px 0px 5px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  
 }
 
-.se2Content {
-  margin-top: 4rem;
-
-  p {
-    color: $wh-color;
-    font-size: 2rem;
-    font-family: 'Poppins';
-    margin-bottom: -1.5rem;
-    font-weight: 400;
-    opacity: .8;
-  }
-
-  h1 {
-    color: $wh-color;
-    font-size: clamp(3rem, 5.8vw, 7.5rem);
-    font-weight: bold;
-    line-height: 7rem;
-    margin-top: 1%;
-
-  }
-
-  h6 {
-    color: $wh-color;
-    font-size: 1.3rem;
-    margin-top: 2%;
-    font-weight: 400;
-    opacity: .7;
-
-
-    em {
-      color: red;
-      font-size: 1.3rem;
-      font-style: normal;
-    }
-
-  }
-
-  .FindMeText {
-    font-size: 1.5rem;
-    margin-top: 2%;
-    font-weight: 400;
-    opacity: .7;
-  }
-
-  i {
-    font-size: 3rem;
-    margin-top: 2%;
-    color: $wh-color;
-    transition: all 0.3s ease-in-out;
-    margin-right: 3rem;
-    opacity: .7;
-
-    &:hover {
-      color: red;
-      cursor: pointer;
-
-    }
-  }
-}
-
-.btnSocial {
+.myText{
+  color: $wh-color;
   display: flex;
-
-  button {
-    display: block;
-    color: #FFFFFF;
-    stroke-width: 2px;
-    stroke-linecap: butt;
-    stroke-linejoin: miter;
-    stroke-miterlimit: 100;
-    stroke-dashoffset: 0%;
-    font-size: 1rem;
-    width: clamp(3rem, 100%, 7.5rem);
-    height: 100%;
-    border: white solid 2px;
-    border-radius: 4.5rem;
-    -webkit-transition: .3s;
-    transition: .3s;
-    -moz-transition: .3s;
-    -ms-transition: .3s;
-    -o-transition: .3s;
-    background: none;
-    display: block;
-    margin-right: 1rem;
-    margin-top: 2rem;
-    padding: 1rem;
-    margin-bottom: 2rem;
-    cursor: pointer;
-
-    &:hover {
-      background-color: #FFFFFF;
-
-      color: red;
-    }
-
-    &:nth-child(1) {
-      background-color: #FF0513;
-      border: red solid 2px;
-
-      &:hover {
-        background-color: $wh-color;
-        border: $wh-color solid 2px;
-
-      }
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  word-wrap: break-word;
+  h4{
+    font-size: clamp(1.5rem , 2.5vw , 2.5rem);
+    text-align: center;
+    font-weight: 300;
+    opacity: .7;
+    span{
+      color: rgb(255, 0, 0);
     }
   }
-}
-
-.se2Content2 {
-  img {
-    width: 100%;
-    mix-blend-mode: screen;
-    filter: brightness(30%) saturate(40%);
-    margin-top: -15%;
-    margin-left: -15%;
-    z-index: 0;
-
+  h1{
+    font-size: clamp(3rem , 4.5vw , 4.5rem);
+    text-align: center;
 
   }
 }
 
-.shape {
-  width: 15vw;
-  position: absolute;
-  left: 0%;
-  top: 50%;
-  z-index: -1;
-  transform: translate(-20%, -45%);
-}
 
 #section--3 {
-  margin-top: 3rem;
   background-color: $sec3BG;
   width: 100%;
   height: 100vh;
@@ -935,56 +853,27 @@ transform: translateY(-10%);
 
 
 @media screen and (max-height: 400px){
-#section--3{
+  #section--3{
   height: auto;
 }
 }
 
-@media screen and (max-width:400px) {
-
-  .se2Content {
-
-    p,
-    h1,
-    h6,
-    i,
-    .btnSocial button {
-      text-align: center;
-    }
-
-    h1 {
-      line-height: 3rem;
-      margin: 2rem 0rem;
-    }
-
-    i {
-      margin-right: 2rem;
-      transform: translateX(100%);
-    }
-
-
+@media only screen and (max-width : 575px){
+ 
+  .myImage{
+    box-shadow:  none ;
+    -webkit-box-shadow: none;
+}
+   #section--3 {
+    box-shadow: -30px 0px 30px 15px black;
   }
 
-  .se2Content2 {
-    img {
-      filter: brightness(60%) saturate(0%);
-
-
-    }
-  }
-
+}
+@media screen and (max-width:425px) {
+   
   #section--3 {
     height: auto;
   }
-
-  .shape {
-    display: none;
-  }
-
-  .mg{
-    margin: 3% 0%;
-  }
-
   .customBTN1 {
 
     transform: translateX(100%);
@@ -998,7 +887,9 @@ transform: translateY(-10%);
     margin: 1% 0%;
 
   }
-
+  .mg{
+    margin: 3% 0%;
+  }
   .s5headerText{
     margin-bottom: 0%;
   }
