@@ -557,6 +557,25 @@ body {
   z-index: -1;
   transition: all .5s ease-in-out;
 }
+.card[data-hoverd="true"]{
+  .hoverCard{
+     bottom: 0%;
+     overflow: visible;
+     opacity: 1;
+     z-index: 100;
+  
+  }
+
+  .hovCtext {
+    bottom: 0%;
+    opacity: 1;
+    z-index: 100;
+
+  }
+
+
+
+  }
 
 .hovCtext {
   position: absolute;
@@ -585,6 +604,7 @@ body {
   p {
     color: $wh-color;
   }
+  
 }
 
 
@@ -604,21 +624,11 @@ body {
 
   }
 
-  &:hover .hoverCard {
-    bottom: 0%;
-    overflow: visible;
-    opacity: 1;
-    z-index: 10;
+  
+  
 
-  }
-
-  &:hover .hovCtext {
-    bottom: 0%;
-    opacity: 1;
-    z-index: 10;
-
-  }
 }
+
 
 .customBTN1 {
   color: #FFFFFF;
@@ -648,6 +658,7 @@ body {
 
 
 }
+
 
 #section--5 {
   width: 100%;

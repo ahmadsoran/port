@@ -497,6 +497,18 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
+.card[data-hoverd=true] .hoverCard {
+  bottom: 0%;
+  overflow: visible;
+  opacity: 1;
+  z-index: 100;
+}
+.card[data-hoverd=true] .hovCtext {
+  bottom: 0%;
+  opacity: 1;
+  z-index: 100;
+}
+
 .hovCtext {
   position: absolute;
   padding: 5%;
@@ -536,17 +548,6 @@ body {
 }
 .card:hover {
   background-size: 110%;
-}
-.card:hover .hoverCard {
-  bottom: 0%;
-  overflow: visible;
-  opacity: 1;
-  z-index: 10;
-}
-.card:hover .hovCtext {
-  bottom: 0%;
-  opacity: 1;
-  z-index: 10;
 }
 
 .customBTN1 {
