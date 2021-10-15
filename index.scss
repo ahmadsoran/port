@@ -556,6 +556,10 @@ body {
   opacity: 0;
   z-index: -1;
   transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
 }
 .card[data-hoverd="true"]{
   .hoverCard{
@@ -583,9 +587,12 @@ body {
   bottom: -10%;
   opacity: 0;
   transition: all .5s ease .4s;
-
-
-  h1 {
+  -webkit-transition: all .5s ease .4s;
+  -moz-transition: all .5s ease .4s;
+  -ms-transition: all .5s ease .4s;
+  -o-transition: all .5s ease .4s;
+  h1
+{
     color: $wh-color;
     font-size: 2rem;
     font-weight: 500;
