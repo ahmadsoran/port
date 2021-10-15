@@ -471,7 +471,7 @@ body {
   height: 100%;
   border-radius: 2rem;
   position: relative;
-  bottom: -10%;
+  bottom: 0%;
   opacity: 0;
   z-index: -1;
   transition: all .5s ease-in-out;
@@ -546,7 +546,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-color: black;
-  overflow: hidden;
+  overflow: visible;
   &:hover
 {
     background-size: 110%;
