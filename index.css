@@ -259,7 +259,7 @@ body {
 .myImage {
   width: 105%;
   margin-left: -2.5%;
-  height: 100vh;
+  padding: 60% 0%;
   background-image: url(assets/img/me2.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -276,7 +276,7 @@ body {
 }
 
 .myText {
-  height: 50%;
+  height: auto;
   color: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -341,7 +341,7 @@ body {
 .socialBtn i:nth-child(3) {
   cursor: url(assets/img/icons8-facebook-96.png) 40 40, auto;
 }
-.socialBtn i:active {
+.socialBtn i:hover {
   color: #ff0000;
 }
 
@@ -477,6 +477,18 @@ body {
   -o-transition: all 0.5s ease-in-out;
 }
 
+.card[data-hoverd=true] .hoverCard {
+  bottom: 0%;
+  overflow: visible;
+  opacity: 1;
+  z-index: 100;
+}
+.card[data-hoverd=true] .hovCtext {
+  bottom: 0%;
+  opacity: 1;
+  z-index: 100;
+}
+
 .hovCtext {
   position: absolute;
   padding: 5%;
@@ -521,17 +533,6 @@ body {
 }
 .card:hover {
   background-size: 110%;
-}
-.card:active .hoverCard {
-  bottom: 0%;
-  overflow: visible;
-  opacity: 1;
-  z-index: 100;
-}
-.card:active .hovCtext {
-  bottom: 0%;
-  opacity: 1;
-  z-index: 100;
 }
 
 .customBTN1 {
@@ -825,8 +826,8 @@ body {
   }
 
   #section--3 {
-    -webkit-box-shadow: -30px 0px 30px 15px black;
-            box-shadow: -30px 0px 30px 15px black;
+    -webkit-box-shadow: 0px -10px 20px 4px black;
+            box-shadow: 0px -10px 20px 4px black;
   }
 }
 @media screen and (max-width: 425px) {
