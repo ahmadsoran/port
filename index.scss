@@ -9,7 +9,6 @@ $bgCardHover: #000000b0;
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   outline: none;
   font-family: "Poppins";
@@ -28,7 +27,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #0E0C38;
   
@@ -89,8 +87,6 @@ body {
 }
 
 .nav-item {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
 
 }
@@ -101,11 +97,7 @@ body {
   text-transform: capitalize;
   margin: 0 2rem;
   text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
   cursor: pointer;
@@ -124,7 +116,6 @@ body {
   border: white solid 2px;
   border-radius: 4.5rem;
   font-size: 2.2rem;
-  -webkit-transition: .3s;
   transition: .3s;
   -moz-transition: .3s;
   -ms-transition: .3s;
@@ -193,7 +184,8 @@ body {
     width: 100%;
     height: 120%;
     min-height: 50%;
-    clip-path: circle(0px at 50%);
+    -webkit-clip-path: circle(0px at 50%);
+            clip-path: circle(0px at 50%);
     transition: all 1s ease-in-out;
     visibility: hidden;
     margin-top: -1%;
@@ -206,7 +198,8 @@ body {
   }
 
   .nav-item.open {
-    clip-path: circle(100%);
+    -webkit-clip-path: circle(100%);
+            clip-path: circle(100%);
     visibility: visible;
 
   }
@@ -305,17 +298,20 @@ body {
 }
 
 .myText{
+  height: 50%;
   color: $wh-color;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   word-wrap: break-word;
+  position: relative;
   h4{
     font-size: clamp(1.5rem , 1.5vw , 1.5vw);
     text-align: center;
     font-weight: 300;
     opacity: .7;
+    position: relative;
     span{
       color: rgb(255, 0, 0);
     }
@@ -324,17 +320,42 @@ body {
     font-size: clamp(3rem , 4vw , 4vw);
     text-align: center;
 
-  }
+}
+}
+.socialBtn{
+margin-top: 14%;
+  display :flex;
+  justify-content: space-evenly;
+  align-items: center;
+ position: relative;  
+  i{
+    color: $wh-color;
+    transition: all .2s ease-in-out;
+    font-size: clamp(3.5rem , 4vw , 4vw);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    padding: 1rem;
+    &:nth-child(1)
+{
+       cursor: url(assets/img/icons8-twitter-circled-96.png) 40 40, auto;
+     }  &:nth-child(2){
+       cursor: url(assets/img/icons8-instagram-96.png) 40 40, auto;
+     }  &:nth-child(3){
+       cursor: url(assets/img/icons8-facebook-96.png) 40 40, auto;
+     }
+     &:active{
+       color: #ff0000;
+     }
+}
 }
 
-
 #section--3 {
-  background-color: $sec3BG;
-  width: 100%;
-  height: 100vh;
-  padding: 3% 0%;
-
-
+   background-color: $sec3BG;
+   width: 100%;
+   height: 100vh;
+   padding: 3% 0%;
 }
 
 .aboutSection {
@@ -471,7 +492,7 @@ body {
   height: 100%;
   border-radius: 2rem;
   position: relative;
-  bottom: 0%;
+  bottom: -10%;
   opacity: 0;
   z-index: -1;
   transition: all .5s ease-in-out;
@@ -480,25 +501,25 @@ body {
   -ms-transition: all .5s ease-in-out;
   -o-transition: all .5s ease-in-out;
 }
-.card[data-hoverd="true"]{
-  .hoverCard{
-     bottom: 0%;
-     overflow: visible;
-     opacity: 1;
-     z-index: 100;
+// .card[data-hoverd="true"]{
+//   .hoverCard{
+//      bottom: 0%;
+//      overflow: visible;
+//      opacity: 1;
+//      z-index: 100;
   
-  }
+//   }
 
-  .hovCtext {
-    bottom: 0%;
-    opacity: 1;
-    z-index: 100;
+//   .hovCtext {
+//     bottom: 0%;
+//     opacity: 1;
+//     z-index: 100;
 
-  }
+//   }
 
 
 
-  }
+//   }
 
 .hovCtext {
   position: absolute;
@@ -539,19 +560,38 @@ body {
 
 .card {
   width: 100%;
-  height: 30vh;
+  height: 50vh;
   border-radius: 10%;
   background-image: url(assets/img/comeingsoon.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: black;
-  overflow: visible;
+  overflow: hidden;
   &:hover
 {
     background-size: 110%;
 
   }
+
+  &:active{
+    .hoverCard{
+      bottom: 0%;
+      overflow: visible;
+      opacity: 1;
+      z-index: 100;
+   
+   }
+ 
+   .hovCtext {
+     bottom: 0%;
+     opacity: 1;
+     z-index: 100;
+ 
+   }
+  }
+
+  
 
   
   
@@ -572,7 +612,6 @@ body {
   border: white solid 2px;
   border-radius: 4.5rem;
   font-size: 1rem;
-  -webkit-transition: .3s;
   transition: .3s;
   -moz-transition: .3s;
   -ms-transition: .3s;

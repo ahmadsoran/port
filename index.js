@@ -80,32 +80,32 @@ navItemLinks.addEventListener('click', function (e) {
     }
   }); 
 
-  const hoverCards = document.querySelectorAll('.hoverCard');
-  const hoverCardText = document.querySelector('.hovCtext');
-  const card = document.querySelectorAll('.card');
+  // const hoverCards = document.querySelectorAll('.hoverCard');
+  // const hoverCardText = document.querySelector('.hovCtext');
+  // const card = document.querySelectorAll('.card');
   
-  card.forEach((e)=>{
-            e.addEventListener('mouseenter', function(){
-        //   console.log(hoverCards);
+  // card.forEach((e)=>{
+  //           e.addEventListener('mouseenter', function(){
+  //       //   console.log(hoverCards);
        
-          if (event.type == 'mouseenter') {
-            this.setAttribute('data-hoverd', true)
+  //         if (event.type == 'mouseenter') {
+  //           this.setAttribute('data-hoverd', true)
            
-          } 
+  //         } 
           
 
-        });
+  //       });
 
-        e.addEventListener('mouseleave', function(e){
-            //   console.log(hoverCards);
+  //       e.addEventListener('mouseleave', function(e){
+  //           //   console.log(hoverCards);
     
-              if(event.type == 'mouseleave'){
-                    this.setAttribute('data-hoverd', false)
+  //             if(event.type == 'mouseleave'){
+  //                   this.setAttribute('data-hoverd', false)
                     
-                          }
+  //                         }
                 
                 
-                        });
-                  });
+  //                       });
+  //                 });
                 
          
