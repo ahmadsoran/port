@@ -274,7 +274,44 @@ body {
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
 }
+.myImage img {
+  width: clamp(3rem , 10vw , 10vw);
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  -webkit-animation: EarthRotate 25s infinite linear;
+          animation: EarthRotate 25s infinite linear;
+}
 
+@-webkit-keyframes EarthRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-filter: hue-rotate(0deg) drop-shadow(-15px -25px 10px black);
+            filter: hue-rotate(0deg) drop-shadow(-15px -25px 10px black);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-filter: hue-rotate(360deg) drop-shadow(-15px -25px 10px black);
+            filter: hue-rotate(360deg) drop-shadow(-15px -25px 10px black);
+  }
+}
+
+@keyframes EarthRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-filter: hue-rotate(0deg) drop-shadow(-15px -25px 10px black);
+            filter: hue-rotate(0deg) drop-shadow(-15px -25px 10px black);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-filter: hue-rotate(360deg) drop-shadow(-15px -25px 10px black);
+            filter: hue-rotate(360deg) drop-shadow(-15px -25px 10px black);
+  }
+}
 .myText {
   height: auto;
   color: #FFFFFF;
@@ -502,7 +539,7 @@ body {
 }
 .hovCtext h1 {
   color: #FFFFFF;
-  font-size: clamp(1rem , 2vw , 2vw);
+  font-size: clamp(2.5rem , 2vw , 2vw);
   font-weight: 500;
 }
 .hovCtext h1::before {
@@ -516,14 +553,14 @@ body {
 }
 .hovCtext p {
   color: #FFFFFF;
-  font-size: clamp(1rem , 1vw , 1vw);
+  font-size: clamp(1.5rem , 1vw , 1vw);
   font-weight: 300;
 }
 
 .card {
   width: 100%;
-  height: 50vh;
-  border-radius: 10%;
+  height: clamp(10rem , 40vh ,40vh);
+  border-radius: 2.5rem;
   background-image: url(assets/img/comeingsoon.jpg);
   background-size: cover;
   background-position: center;

@@ -295,9 +295,30 @@ body {
   border-bottom-right-radius: 0px;
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
+  img{
+    width: clamp(3rem , 10vw , 10vw);
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation: EarthRotate 25s infinite linear ;
+    // filter: drop-shadow(-15px -25px 10px  black) ;
+  }
+
+}
+@keyframes EarthRotate {
+
+from{
+      transform: rotate(0deg);
+      filter: hue-rotate(0deg) drop-shadow(-15px -25px 10px  black);
+  }
+ 
+  to{
+    transform: rotate(360deg);
+    filter: hue-rotate(360deg) drop-shadow(-15px -25px 10px  black);
+  }
+ 
   
 }
-
 .myText{
   height: auto;
   color: $wh-color;
@@ -534,7 +555,7 @@ margin-top: 14%;
   -o-transition: all .5s ease .4s;
   h1{
     color: $wh-color;
-    font-size: clamp(1rem , 2vw , 2vw);
+    font-size: clamp(2.5rem , 2vw , 2vw);
     font-weight: 500;
 
     &::before {
@@ -550,7 +571,7 @@ margin-top: 14%;
 
   p {
     color: $wh-color;
-    font-size: clamp(1rem , 1vw , 1vw);
+    font-size: clamp(1.5rem , 1vw , 1vw);
     font-weight: 300;
 
   }
@@ -561,8 +582,9 @@ margin-top: 14%;
 
 .card {
   width: 100%;
-  height: 50vh;
-  border-radius: 10%;
+  height: clamp(10rem , 40vh ,40vh);
+  // padding: 45% 0%;
+  border-radius: 2.5rem;
   background-image: url(assets/img/comeingsoon.jpg);
   background-size: cover;
   background-position: center;
