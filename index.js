@@ -80,32 +80,5 @@ navItemLinks.addEventListener('click', function (e) {
     }
   }); 
 
-  const hoverCards = document.querySelectorAll('.hoverCard');
-  const hoverCardText = document.querySelector('.hovCtext');
-  const card = document.querySelectorAll('.card');
-  
-  card.forEach((e)=>{
-            e.addEventListener('mouseenter', function(){
-        //   console.log(hoverCards);
-       
-          if (event.type == 'mouseenter') {
-            this.setAttribute('data-hoverd', true)
-           
-          } 
-          
-
-        });
-
-        e.addEventListener('mouseleave', function(e){
-            //   console.log(hoverCards);
-    
-              if(event.type == 'mouseleave'){
-                    this.setAttribute('data-hoverd', false)
-                    
-                          }
-                
-                
-                        });
-                  });
                 
          

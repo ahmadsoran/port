@@ -276,7 +276,7 @@ body {
   border-top-left-radius: 25px;
 }
 .myImage img {
-  width: clamp(3rem , 10vw , 10vw);
+  width: clamp(3rem, 10vw, 10vw);
   position: absolute;
   top: 10%;
   left: 10%;
@@ -333,7 +333,7 @@ body {
   position: relative;
 }
 .myText h4 {
-  font-size: clamp(1.5rem , 1.5vw , 1.5vw);
+  font-size: clamp(.8rem, 1.5vw, 1.5vw);
   text-align: center;
   font-weight: 300;
   opacity: 0.7;
@@ -343,7 +343,7 @@ body {
   color: red;
 }
 .myText h1 {
-  font-size: clamp(3rem , 4vw , 4vw);
+  font-size: clamp(3rem, 4vw, 4vw);
   text-align: center;
 }
 
@@ -363,7 +363,7 @@ body {
 .socialBtn i {
   color: #FFFFFF;
   transition: all 0.2s ease-in-out;
-  font-size: clamp(3.5rem , 4vw , 4vw);
+  font-size: clamp(3.5rem, 4vw, 4vw);
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
@@ -386,7 +386,7 @@ body {
 #section--3 {
   background-color: #040221;
   width: 100%;
-  height: 100vh;
+  height: auto;
   padding: 3% 0%;
 }
 
@@ -409,8 +409,8 @@ body {
 .devimg {
   width: 100%;
   height: 100%;
-  min-height: clamp(20vh , 50vw , 50vh);
-  border: clamp(1.5rem , 3vw ,3rem) #0E0C38 solid;
+  min-height: clamp(20vh, 50vw, 50vh);
+  border: clamp(1.5rem, 3vw, 3rem) #0E0C38 solid;
   padding: 1rem;
   background-image: url(assets/img/1602738901601.jpg);
   background-position: center;
@@ -499,40 +499,14 @@ body {
   overflow: hidden;
 }
 
-.hoverCard {
-  background-color: #000000b0;
-  width: 100%;
-  height: 100%;
-  border-radius: 2rem;
-  position: relative;
-  bottom: -10%;
-  opacity: 0;
-  z-index: -1;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-}
-
-.card[data-hoverd=true] .hoverCard {
-  bottom: 0%;
-  overflow: visible;
-  opacity: 1;
-  z-index: 100;
-}
-.card[data-hoverd=true] .hovCtext {
-  bottom: 0%;
-  opacity: 1;
-  z-index: 100;
-}
-
 .hovCtext {
   position: absolute;
   padding: 5%;
-  bottom: -10%;
   opacity: 0;
-  transition: all 0.5s ease 0.4s;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+  -webkit-transition: all 0.5s ease-in-out 0.4s;
+  transition: all 0.5s ease-in-out 0.4s;
   -webkit-transition: all 0.5s ease 0.4s;
   -moz-transition: all 0.5s ease 0.4s;
   -ms-transition: all 0.5s ease 0.4s;
@@ -540,7 +514,7 @@ body {
 }
 .hovCtext h1 {
   color: #FFFFFF;
-  font-size: clamp(2.5rem , 2vw , 2vw);
+  font-size: clamp(2.5rem, 2vw, 2vw);
   font-weight: 500;
 }
 .hovCtext h1::before {
@@ -554,13 +528,14 @@ body {
 }
 .hovCtext p {
   color: #FFFFFF;
-  font-size: clamp(1.5rem , 1vw , 1vw);
+  font-size: clamp(1.5rem, 1vw, 1vw);
   font-weight: 300;
 }
 
 .card {
+  height: 100%;
   width: 100%;
-  height: clamp(10rem , 40vh ,40vh);
+  padding: 80% 0% 0% 0%;
   border-radius: 2.5rem;
   background-image: url(assets/img/comeingsoon.jpg);
   background-size: cover;
@@ -568,9 +543,51 @@ body {
   background-repeat: no-repeat;
   background-color: black;
   overflow: hidden;
+  color: #FFFFFF;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: relative;
 }
-.card:hover {
-  background-size: 110%;
+.card h1 {
+  font-size: clamp(2.5rem, 2vw, 2vw);
+  margin: 4%;
+  position: absolute;
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  bottom: 9%;
+}
+.card p {
+  font-size: clamp(1rem, 1vw, 1vw);
+  margin: 4%;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  bottom: 1%;
+}
+.card:hover h1 {
+  opacity: 1;
+}
+.card:hover p {
+  opacity: 1;
+}
+.card:hover .ctext {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 1;
+}
+
+.ctext {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #000000b0;
+  -webkit-transform: translateY(-80%);
+          transform: translateY(-80%);
+  opacity: 0;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 .customBTN1 {
@@ -647,7 +664,6 @@ body {
 .s5contentTextSide p {
   margin-top: 5rem;
   color: #FFFFFF;
-  font-size: 3rem;
   padding: 0rem 3rem;
   text-align: left;
   font-size: clamp(.8rem, 2vw, 3.0rem);
@@ -734,7 +750,7 @@ body {
 }
 .s6headerTitle h1 {
   color: #FFFFFF;
-  font-size: clamp(2rem, 4vw, 4rem);
+  font-size: clamp(2rem, 4vw, 4vw);
   text-align: center;
   font-weight: 600;
 }
@@ -752,7 +768,7 @@ body {
 
 .s6headerText {
   color: #FFFFFF;
-  font-size: clamp(.5rem, 1.5vw, 1.5rem);
+  font-size: clamp(.5rem, 1.5vw, 1.5vw);
   padding: 0rem 3rem;
   text-align: center;
   line-height: 200%;
@@ -808,7 +824,7 @@ body {
   opacity: 0.2;
 }
 #section--8 h1 {
-  font-size: clamp(2.5rem , 6vw , 6rem);
+  font-size: clamp(2.5rem, 6vw, 6rem);
   font-weight: 500;
 }
 
@@ -829,7 +845,7 @@ body {
   margin-left: 3px;
   text-decoration: none;
   font-weight: 200;
-  font-size: clamp(.7rem , 1.5vw , 1.6rem);
+  font-size: clamp(.7rem, 1.5vw, 1.6rem);
 }
 .footerLinks a:hover {
   color: #d1d1d1;
