@@ -113,10 +113,15 @@ allSections.forEach(function (section) {
 });
 
 
-let script1 = document.querySelector('#scriptOne span');
-let script2 = document.querySelector('#scriptTwo span');
-let audio = document.getElementById("audio");
-let audio2 = document.getElementById("audio2");
+const script1 = document.querySelector('#scriptOne span');
+const script2 = document.querySelector('#scriptTwo span');
+const scriptText1 = document.querySelector('.scriptText1')
+const scriptText2 = document.querySelector('.scriptText2')
+const audio = document.getElementById("audio");
+const audio2 = document.getElementById("audio2");
+
+scriptText1.insertAdjacentText('afterbegin', '<script>');
+scriptText2.insertAdjacentText('afterbegin', '</script>');
 
 script1.addEventListener('click', function(){
         audio.play();

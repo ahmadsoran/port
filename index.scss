@@ -384,13 +384,18 @@ body {
   border-radius: 2vw;
   box-shadow: inset black 0px 0px 15px 5px, black 0px 0px 5px;
   opacity: .8;
-span{
+  span{
+    font-family: monospace , sans-serif; 
+  }
+p{
+  span{
   cursor: pointer;
   color: red;
   transition: all .3s ease-in-out;
   &:hover{
     color: darkred;
   }
+}
 }
 }
 

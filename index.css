@@ -385,12 +385,15 @@ body {
   opacity: 0.8;
 }
 .scriptText span {
+  font-family: monospace, sans-serif;
+}
+.scriptText p span {
   cursor: pointer;
   color: red;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.scriptText span:hover {
+.scriptText p span:hover {
   color: darkred;
 }
 
