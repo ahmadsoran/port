@@ -374,6 +374,26 @@ body {
   }
 }
 
+.scriptText{
+  padding: 5%;
+  background-color: transparent;
+  word-wrap: break-word;
+  color: $wh-color;
+  font-size: clamp(2.5rem, 1vw, 1vw);
+  margin: 15%;
+  border-radius: 2vw;
+  box-shadow: inset black 0px 0px 15px 5px, black 0px 0px 5px;
+  opacity: .8;
+span{
+  cursor: pointer;
+  color: red;
+  transition: all .3s ease-in-out;
+  &:hover{
+    color: darkred;
+  }
+}
+}
+
 #section--3 {
   background-color: $sec3BG;
   width: 100%;
@@ -988,6 +1008,9 @@ body {
 
       }
     }
+  }
+  .scriptText{
+    display: none;
   }
 
 }

@@ -112,3 +112,17 @@ allSections.forEach(function (section) {
 
 });
 
+
+let script1 = document.querySelector('#scriptOne span');
+let script2 = document.querySelector('#scriptTwo span');
+let audio = document.getElementById("audio");
+let audio2 = document.getElementById("audio2");
+
+script1.addEventListener('click', function(){
+        audio.play();
+        audio2.pause();
+});
+script2.addEventListener('click', function(){
+        audio2.play();
+        audio.pause();
+});
