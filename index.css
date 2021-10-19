@@ -43,7 +43,7 @@ body {
 }
 
 .navbar-brand {
-  font-size: clamp(1.7rem, 4vw, 5.1rem);
+  font-size: clamp(1.7rem, 4vw, 4vw);
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -53,11 +53,11 @@ body {
   position: absolute;
   z-index: -1;
   background-color: #FF0513;
-  width: 10rem;
-  height: 11.7rem;
+  width: 7.5vw;
+  height: 11.7vw;
   left: -30%;
-  -webkit-transform: translateY(-2.7rem);
-          transform: translateY(-2.7rem);
+  -webkit-transform: translateY(-3.7vw);
+          transform: translateY(-3.7vw);
 }
 
 .nav-item a:first-child::after {
@@ -65,9 +65,11 @@ body {
   position: absolute;
   z-index: -1;
   background-color: #FF0513;
-  width: 10rem;
-  height: 0.1rem;
-  bottom: -0.5rem;
+  width: 7.5vw;
+  height: 0.1vw;
+  bottom: 0%;
+  -webkit-transform: translateY(0.9vw);
+          transform: translateY(0.9vw);
   left: -30%;
 }
 
@@ -79,9 +81,9 @@ body {
 
 .nav-item a {
   color: #FFFFFF;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 1.5vw, 1.5vw);
   text-transform: capitalize;
-  margin: 0 2rem;
+  margin: 0 2vw;
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,11 +102,11 @@ body {
   stroke-linejoin: miter;
   stroke-miterlimit: 100;
   stroke-dashoffset: 0%;
-  width: 202px;
-  height: 7rem;
+  width: clamp(7rem, 10vw, 10vw);
+  height: clamp(4rem, 4vw, 4vw);
   border: white solid 2px;
   border-radius: 4.5rem;
-  font-size: 2.2rem;
+  font-size: clamp(1rem, 1.5vw, 1.5vw);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -moz-transition: 0.3s;
@@ -236,7 +238,7 @@ body {
   }
 }
 .layaer {
-  width: clamp(1rem, 23vw, 60rem);
+  width: clamp(1rem, 23vw, 23vw);
   overflow: hidden;
   z-index: 1;
   position: absolute;
@@ -333,7 +335,7 @@ body {
   position: relative;
 }
 .myText h4 {
-  font-size: clamp(.8rem, 1.5vw, 1.5vw);
+  font-size: clamp(1.1rem, 1.5vw, 1.5vw);
   text-align: center;
   font-weight: 300;
   opacity: 0.7;
@@ -343,7 +345,7 @@ body {
   color: red;
 }
 .myText h1 {
-  font-size: clamp(3rem, 4vw, 4vw);
+  font-size: clamp(2.5rem, 4vw, 4vw);
   text-align: center;
 }
 
@@ -396,12 +398,12 @@ body {
 
 .sec3Content h1 {
   color: #FFFFFF;
-  font-size: clamp(1.7rem, 4vw, 4vw);
+  font-size: clamp(2.5rem, 4vw, 4vw);
   font-weight: 400;
 }
 .sec3Content p {
   color: #FFFFFF;
-  font-size: clamp(.8rem, 1.3vw, 1.3vw);
+  font-size: clamp(1.1rem, 1.5vw, 1.5vw);
   font-weight: 200;
   opacity: 0.6;
 }
@@ -440,7 +442,7 @@ body {
 }
 .portSectionH h1 {
   color: #FFFFFF;
-  font-size: clamp(3.5rem, 4.5vw, 4.5vw);
+  font-size: clamp(2.5rem, 4vw, 4vw);
   font-weight: 400;
 }
 .portSectionH h1::after {
@@ -469,6 +471,7 @@ body {
   cursor: pointer;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  font-size: clamp(1.7rem, 2vw, 2vw);
 }
 .portBtn button.btnActive {
   background-color: #FF0513;
@@ -479,10 +482,10 @@ body {
 }
 .portHeaderLinks a {
   color: #FFFFFF;
-  margin-right: 1rem;
+  margin-right: 1%;
   text-decoration: none;
   text-transform: capitalize;
-  font-size: clamp(1rem, 1.5vw, 1.5vw);
+  font-size: clamp(.9rem, 1.3vw, 1.3vw);
   font-weight: 300;
   opacity: 0.7;
   -webkit-transition: all 0.3s ease-in-out;
@@ -514,7 +517,7 @@ body {
 }
 .hovCtext h1 {
   color: #FFFFFF;
-  font-size: clamp(2.5rem, 2vw, 2vw);
+  font-size: clamp(2.5rem, 4vw, 4vw);
   font-weight: 500;
 }
 .hovCtext h1::before {
@@ -602,7 +605,7 @@ body {
   margin: 3%;
   border: white solid 2px;
   border-radius: 4.5rem;
-  font-size: 1rem;
+  font-size: clamp(.9rem, 1.5vw, 1.5vw);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -moz-transition: 0.3s;
@@ -628,14 +631,14 @@ body {
 }
 .headerTitle h1 {
   color: #FFFFFF;
-  font-size: clamp(2rem, 4vw, 4rem);
+  font-size: clamp(2.5rem, 4vw, 4vw);
   text-align: center;
   font-weight: 600;
   position: relative;
 }
 .headerTitle h1::after {
   content: "";
-  width: clamp(3.5rem, 20vw, 20rem);
+  width: clamp(3.5rem, 20vw, 20vw);
   height: 1px;
   background-color: red;
   position: absolute;
@@ -647,14 +650,14 @@ body {
 
 .s5headerText {
   color: #FFFFFF;
-  font-size: clamp(.5rem, 1.5vw, 1.5rem);
+  font-size: clamp(1.1rem, 1.5vw, 1.5vw);
   padding: 0rem 3rem;
   text-align: center;
   line-height: 200%;
   font-weight: 300;
   opacity: 0.7;
   margin-bottom: 10rem;
-  margin-top: 3%;
+  margin: 5% 0%;
 }
 
 .s5contentTextSide {
@@ -666,8 +669,7 @@ body {
   color: #FFFFFF;
   padding: 0rem 3rem;
   text-align: left;
-  font-size: clamp(.8rem, 2vw, 3.0rem);
-  opacity: 0.7;
+  font-size: clamp(1.1rem, 2vw, 2vw);
 }
 
 .s5contentAnimationSide {
@@ -682,18 +684,18 @@ body {
 }
 
 #img1 {
-  width: clamp(6rem, 10vw, 10rem);
-  height: clamp(6rem, 10vw, 10rem);
+  width: clamp(6rem, 10vw, 10vw);
+  height: clamp(6rem, 10vw, 10vw);
   border-radius: 50%;
   position: absolute;
   top: -20%;
   right: 8%;
-  border: clamp(.1rem, 1vw, .7rem) solid #FF0513;
+  border: clamp(.1rem, .8vw, .8vw) solid #FF0513;
 }
 
 #img2 {
-  width: clamp(5rem, 7vw, 7.6rem);
-  height: clamp(5rem, 7vw, 7.6rem);
+  width: clamp(5rem, 7vw, 7.6vw);
+  height: clamp(5rem, 7vw, 7.6vw);
   border-radius: 50%;
   position: absolute;
   top: 10%;
@@ -701,8 +703,8 @@ body {
 }
 
 #img3 {
-  width: clamp(4rem, 6vw, 6rem);
-  height: clamp(4rem, 6vw, 6rem);
+  width: clamp(4rem, 6vw, 6vw);
+  height: clamp(4rem, 6vw, 6vw);
   border-radius: 50%;
   position: absolute;
   top: 20%;
@@ -710,8 +712,8 @@ body {
 }
 
 #img4 {
-  width: clamp(2.5rem, 4vw, 4rem);
-  height: clamp(2.5rem, 4vw, 4rem);
+  width: clamp(2.5rem, 4vw, 4vw);
+  height: clamp(2.5rem, 4vw, 4vw);
   border-radius: 50%;
   position: absolute;
   bottom: 35%;
@@ -719,8 +721,8 @@ body {
 }
 
 #img5 {
-  width: clamp(6rem, 10vw, 10rem);
-  height: clamp(6rem, 10vw, 10rem);
+  width: clamp(6rem, 10vw, 10vw);
+  height: clamp(6rem, 10vw, 10vw);
   border-radius: 50%;
   position: absolute;
   bottom: 0%;
@@ -728,8 +730,8 @@ body {
 }
 
 #img6 {
-  width: clamp(5rem, 7vw, 7.6rem);
-  height: clamp(5rem, 7vw, 7.6rem);
+  width: clamp(5rem, 7vw, 7.6vw);
+  height: clamp(5rem, 7vw, 7.6vw);
   border-radius: 50%;
   position: absolute;
   bottom: 0%;
@@ -750,13 +752,13 @@ body {
 }
 .s6headerTitle h1 {
   color: #FFFFFF;
-  font-size: clamp(2rem, 4vw, 4vw);
+  font-size: clamp(2.5rem, 4vw, 4vw);
   text-align: center;
   font-weight: 600;
 }
 .s6headerTitle h1::after {
   content: "";
-  width: clamp(5.5rem, 13vw, 13rem);
+  width: clamp(5.5rem, 13vw, 13vw);
   height: 1px;
   background-color: red;
   position: absolute;
@@ -768,7 +770,7 @@ body {
 
 .s6headerText {
   color: #FFFFFF;
-  font-size: clamp(.5rem, 1.5vw, 1.5vw);
+  font-size: clamp(1.1rem, 1.5vw, 1.5vw);
   padding: 0rem 3rem;
   text-align: center;
   line-height: 200%;
@@ -779,8 +781,7 @@ body {
 }
 
 .formSection {
-  -webkit-transform: translateY(-10%);
-          transform: translateY(-10%);
+  width: 100%;
 }
 .formSection form {
   width: 100%;
@@ -824,7 +825,7 @@ body {
   opacity: 0.2;
 }
 #section--8 h1 {
-  font-size: clamp(2.5rem, 6vw, 6rem);
+  font-size: clamp(2.5rem, 4vw, 4vw);
   font-weight: 500;
 }
 
@@ -841,11 +842,14 @@ body {
           align-items: center;
 }
 .footerLinks a {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   color: #FFFFFF;
   margin-left: 3px;
   text-decoration: none;
   font-weight: 200;
-  font-size: clamp(.7rem, 1.5vw, 1.6rem);
+  font-size: clamp(.7rem, 1.5vw, 1.5vw);
+  opacity: 0.7;
 }
 .footerLinks a:hover {
   color: #d1d1d1;
@@ -866,6 +870,8 @@ body {
 }
 .copy p {
   text-transform: capitalize;
+  font-size: clamp(1rem, 1vw, 1vw);
+  opacity: 0.6;
 }
 
 @media screen and (max-height: 400px) {
@@ -912,7 +918,7 @@ body {
 
   .s6headerTitle h1::after {
     content: "";
-    width: clamp(5.5rem, 15vw, 15rem);
+    width: clamp(5.5rem, 15vw, 15vw);
     top: 3%;
   }
 }/*# sourceMappingURL=index.css.map */
