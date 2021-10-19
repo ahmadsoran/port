@@ -886,6 +886,11 @@ body {
   opacity: 0.6;
 }
 
+.vsNm {
+  font-size: clamp(1rem, 1vw, 1vw);
+  opacity: 0.6;
+}
+
 @media screen and (max-height: 400px) {
   #section--3 {
     height: auto;

@@ -951,7 +951,12 @@ p{
 
   }
 }
+.vsNm{
+  font-size: clamp(1rem, 1vw, 1vw);
+  opacity: .6;
 
+
+}
 
 
 @media screen and (max-height: 400px) {
