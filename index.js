@@ -1,3 +1,6 @@
+
+
+
 let nvBtn = document.querySelector('.nvBtns');
 let nvBtns = document.querySelectorAll('.nvBtn');
 let navItem = document.querySelector('.nav-item');
@@ -81,4 +84,31 @@ navItemLinks.addEventListener('click', function (e) {
   }); 
 
                 
+//                         animation 
          
+
+const allSections = document.querySelectorAll('.section');
+
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+
+  entry.target.classList.remove('section--hidden');
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0,
+});
+
+allElement = document.querySelectorAll('h1' , 'p');
+
+allSections.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add('section--hidden');
+ 
+
+});
+

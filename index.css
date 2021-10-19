@@ -26,7 +26,7 @@ body {
 }
 
 .container {
-  padding: 2% 3%;
+  padding: 1.4% 3%;
   max-width: 100%;
 }
 
@@ -227,26 +227,13 @@ body {
     content: none;
   }
 }
-@media screen and (max-width: 1200px) {
-  .layaer {
-    display: none;
-  }
-}
-@media screen and (min-width: 1329px) {
-  .layaer {
-    display: none;
-  }
-}
 .layaer {
-  width: clamp(1rem, 23vw, 23vw);
+  width: clamp(1rem, 19vw, 19vw);
   overflow: hidden;
   z-index: 1;
   position: absolute;
-  transform: translateX(67%);
-  -moz-transform: translateX(67%);
-  -ms-transform: translateX(67%);
-  -o-transform: translateX(67%);
-  -webkit-transform: translateX(67%);
+  -webkit-transform: translateX(81%);
+          transform: translateX(81%);
 }
 
 #section--2 {
@@ -921,4 +908,14 @@ body {
     width: clamp(5.5rem, 15vw, 15vw);
     top: 3%;
   }
+}
+.section {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.section--hidden {
+  opacity: 0;
+  -webkit-transform: translateY(15%) scale(0.2);
+          transform: translateY(15%) scale(0.2);
 }/*# sourceMappingURL=index.css.map */
