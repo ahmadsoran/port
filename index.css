@@ -377,7 +377,7 @@ body {
   background-color: transparent;
   word-wrap: break-word;
   color: #FFFFFF;
-  font-size: clamp(2.5rem, 1vw, 1vw);
+  font-size: clamp(1rem, 2vw, 2vw);
   margin: 15%;
   border-radius: 2vw;
   -webkit-box-shadow: inset black 0px 0px 15px 5px, black 0px 0px 5px;
@@ -929,10 +929,6 @@ body {
     content: "";
     width: clamp(5.5rem, 15vw, 15vw);
     top: 3%;
-  }
-
-  .scriptText {
-    display: none;
   }
 }
 .section {

@@ -379,7 +379,7 @@ body {
   background-color: transparent;
   word-wrap: break-word;
   color: $wh-color;
-  font-size: clamp(2.5rem, 1vw, 1vw);
+  font-size: clamp(1rem, 2vw, 2vw);
   margin: 15%;
   border-radius: 2vw;
   box-shadow: inset black 0px 0px 15px 5px, black 0px 0px 5px;
@@ -1009,9 +1009,7 @@ span{
       }
     }
   }
-  .scriptText{
-    display: none;
-  }
+
 
 }
 
