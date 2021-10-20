@@ -67,10 +67,8 @@ body {
   text-decoration: none;
 }
 .navbar-brand::first-letter {
-  text-shadow: 0px -4px 0px #b30000, 0px -2px 0px #b50000, 0px 2px 0px #b50000, 0px 3px 0px #b30000, -3px -5px 0px #ad0000, -3px 3px 0px #ab0000, 3px 3px 0px #ab0000, 3px -2px 0px #ab0000;
-}
-.navbar-brand:hover > ::first-letter {
-  color: black;
+  color: red;
+  font-weight: 900;
 }
 
 .nav-item a:first-child::before {
