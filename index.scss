@@ -33,6 +33,22 @@ body {
 
 }
 
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-thumb{
+  // border: 3px transparent solid;
+  border-radius: 10px;
+  background: linear-gradient($bg-linear-one , $bg-linear-two);
+  &:hover{
+    background: linear-gradient($bg-linear-two , $bg-linear-one );
+  }
+  
+}
+::-webkit-scrollbar-track{
+  background-color: currentColor;
+  display: none;
+}
 
 .container {
   padding: 1.4% 3%;

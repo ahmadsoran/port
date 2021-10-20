@@ -25,6 +25,25 @@ body {
   background-color: #0E0C38;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5f40cf), to(#2d0080));
+  background: linear-gradient(#5f40cf, #2d0080);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#2d0080), to(#5f40cf));
+  background: linear-gradient(#2d0080, #5f40cf);
+}
+
+::-webkit-scrollbar-track {
+  background-color: currentColor;
+  display: none;
+}
+
 .container {
   padding: 1.4% 3%;
   max-width: 100%;
