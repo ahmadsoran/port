@@ -26,7 +26,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -965,6 +965,6 @@ body {
 
 .section--hidden {
   opacity: 0;
-  -webkit-transform: translateY(15%) scale(0.2);
-          transform: translateY(15%) scale(0.2);
+  -webkit-transform: translateY(15%) scale(0.5);
+          transform: translateY(15%) scale(0.5);
 }/*# sourceMappingURL=index.css.map */

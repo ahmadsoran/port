@@ -34,12 +34,13 @@ body {
 }
 
 ::-webkit-scrollbar{
-  width: 10px;
+  width: 5px;
 }
 ::-webkit-scrollbar-thumb{
   // border: 3px transparent solid;
   border-radius: 10px;
   background: linear-gradient($bg-linear-one , $bg-linear-two);
+  
   &:hover{
     background: linear-gradient($bg-linear-two , $bg-linear-one );
   }
@@ -1048,5 +1049,5 @@ p{
 
 .section--hidden {
   opacity: 0;
-  transform: translateY(15%) scale(.2);
+  transform: translateY(15%) scale(.5);
 }
