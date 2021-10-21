@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="shortcut icon" href="assets/img/me.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/me.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/grid.css">
     <link rel="stylesheet" href="index.css">
     <meta name="description" content="Ahmad Soran Website & App Developer ">
@@ -22,7 +23,7 @@
             <nav>
                 <div class="container  navHead">
                     <a class="navbar-brand" href="#">
-                   Portfolio</a>
+                        Portfolio</a>
                     <img src="assets/img/layaer.png" class="layaer" alt="">
 
                     <div class="nvBtns">
@@ -55,12 +56,13 @@
                             <h4>from <span>kurdistan</span> iraq , developing websites & apps</h4>
                         </div>
                         <div class="socialBtn">
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fab fab fa-instagram"></i>
-                            <i class="fab fab fa-facebook"></i>
+                            <i onclick="location.href = 'https://twitter.com/ahmadsorannn'" class="fab fa-twitter"></i>
+                            <i onclick="location.href = 'https://github.com/ahmadsoran'" class="fab fab fa-github"></i>
+                            <i onclick="location.href = 'https://www.facebook.com/ahmasoran'"
+                                class="fab fa-facebook"></i>
                         </div>
                         <div class="scriptText">
-                             <span class="scriptText1"></span>
+                            <span class="scriptText1"></span>
                             <p id="scriptOne">function Users(e){
                                 if(user.like.myPortfolio == true){
                                 e.<span value="PLAY">click here</span>
@@ -95,52 +97,55 @@
                     <div class="col-sm-6 col-md-6 col-lg-6 sec3Content">
                         <h1>About Me</h1>
                         <p> my name is ahmed soran majeed from kurdistan 23Y old and iam full stack developer </p>
-                                
-            <ul>
-                <h4>I have a good experience 
-                    with</h4>
-                <li>
-                    vanila js 
-                </li>
-                <li>
-                    react js
 
-                </li>
-                <li>
-                    node js
-                </li>
-                <li>
-                    html
-                </li><li>
-                    css
-                </li><li>
-                    scss
-                </li><li>
-                    bootstrap
-                </li>
-                <h4>others with lower experience</h4>
-                <li>php</li>
-                <li>mysql</li>
-                <li>react native</li>
-            </ul>   
+                        <ul>
+                            <h4>I have a good experience
+                                with</h4>
+                            <li>
+                                vanila js
+                            </li>
+                            <li>
+                                react js
+
+                            </li>
+                            <li>
+                                node js
+                            </li>
+                            <li>
+                                html
+                            </li>
+                            <li>
+                                css
+                            </li>
+                            <li>
+                                scss
+                            </li>
+                            <li>
+                                bootstrap
+                            </li>
+                            <h4>others with lower experience</h4>
+                            <li>php</li>
+                            <li>mysql</li>
+                            <li>react native</li>
+                        </ul>
 
 
-                            <button class="customBTN1" href="#">Download CV</button>
+                        <button class="customBTN1" href="#">Download CV</button>
 
 
                     </div>
 
                     <div class="col-sm-6 col-md-6 col-lg-6 mg">
                         <div class="devimg">
-                  <img src="assets/img/bootstrap.png" alt="">
-                  <img src="assets/img/css.png" alt="">
-                  <img src="assets/img/html.png" alt="">
-                  <img src="assets/img/js.png" alt="">
-                  <img src="assets/img/node.png" alt="">
-                  <img src="assets/img/php.png" alt="">
-                  <img src="assets/img/sass.png" alt="">
-                  <img src="assets/img/react-1-282599.png" alt="">
-                  <img src="assets/img/mysql.png" alt="">
+                            <img src="assets/img/bootstrap.png" alt="">
+                            <img src="assets/img/css.png" alt="">
+                            <img src="assets/img/html.png" alt="">
+                            <img src="assets/img/js.png" alt="">
+                            <img src="assets/img/node.png" alt="">
+                            <img src="assets/img/php.png" alt="">
+                            <img src="assets/img/sass.png" alt="">
+                            <img src="assets/img/react-1-282599.png" alt="">
+                            <img src="assets/img/mysql.png" alt="">
                         </div>
 
                     </div>
@@ -155,47 +160,48 @@
                 <div class="portSectionH">
                     <h1>projects</h1>
                     <div class="portBtn">
-                        <button><i>
-                                < </i> </button> <button><i>></i></button>
+                        <button class="prev"> < </button> <button class="next"> > </button>
                     </div>
                 </div>
                 <div class="portHeaderLinks">
-                    <a class="activedLink" href="#">All</a>
-                    <a class="" href="#">websites</a><a class="" href="#">Apps</a>
+                    <!-- <a class="activedLink" href="#">All</a>
+                    <a class="" href="#">websites</a><a class="" href="#">Apps</a> -->
                 </div>
-                <div class="row">
-                    <div class="col-sm-6 col-md-4 col-lg-4 sec4Content">
-                        <div class="card">
-                            <div class="ctext">
-
-                                <h1>website projects</h1>
-                                <p>example of my works</p>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="cardText">
+                                <h1>websites projects card example</h1>
+                                <p>here will be short information about the project</p>
+                                <a href="#">link to project</a>
                             </div>
-
-
-                        </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4 sec4Content">
-                        <div class="card">
-                            <div class="ctext">
-
-                                <h1>website projects</h1>
-                                <p>example of my works</p>
-                            </div>
-
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4 sec4Content">
-                        <div class="card">
-                            <div class="ctext">
-
-                                <h1>website projects</h1>
-                                <p>example of my works</p>
-                            </div>
-
-
-                        </div>
+                        <div class="swiper-slide"> <div class="cardText">
+                            <h1>websites projects card example</h1>
+                            <p>here will be short information about the project</p>
+                            <a href="#">link to project</a>
+                        </div></div>
+                        <div class="swiper-slide"> <div class="cardText">
+                            <h1>websites projects card example</h1>
+                            <p>here will be short information about the project</p>
+                            <a href="#">link to project</a>
+                        </div></div>  <div class="swiper-slide"> <div class="cardText">
+                            <h1>websites projects card example</h1>
+                            <p>here will be short information about the project</p>
+                            <a href="#">link to project</a>
+                        </div></div>  <div class="swiper-slide"> <div class="cardText">
+                            <h1>websites projects card example</h1>
+                            <p>here will be short information about the project</p>
+                            <a href="#">link to project</a>
+                        </div></div>  <div class="swiper-slide"> <div class="cardText">
+                            <h1>websites projects card example</h1>
+                            <p>here will be short information about the project</p>
+                            <a href="#">link to project</a>
+                        </div></div>  <div class="swiper-slide"> <div class="cardText">
+                            <h1>websites projects card example</h1>
+                            <p>here will be short information about the project</p>
+                            <a href="#">link to project</a>
+                        </div></div>
                     </div>
 
                 </div>
@@ -218,21 +224,21 @@
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 s5contentAnimationSide">
                     <img src="assets/img/map.png" alt="">
                     <div class="cliimgs">
-                    <img id="img1" src="assets/img/cli1.png" alt="">
-                    <img id="img2" src="assets/img/cli2.jpg" alt="">
-                    <img id="img3" src="assets/img/cli3.jpg" alt="">
-                    <img id="img4" src="assets/img/cli4.jpg" alt="">
-                    <img id="img5" src="assets/img/cli5.jpg" alt="">
-                    <img id="img6" src="assets/img/cli6.jfif" alt="">
-                </div>
+                        <img id="img1" src="assets/img/cli1.png" alt="">
+                        <img id="img2" src="assets/img/cli2.jpg" alt="">
+                        <img id="img3" src="assets/img/cli3.jpg" alt="">
+                        <img id="img4" src="assets/img/cli4.jpg" alt="">
+                        <img id="img5" src="assets/img/cli5.jpg" alt="">
+                        <img id="img6" src="assets/img/cli6.jfif" alt="">
+                    </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 s5contentTextSide">
-                <p>You're Invaluable to Us
-                    We've been blown away by the incredible value you deliver, and how your work has translated into increased page view times, lead generations, and dramatic decreases in bounce rate and required support.
-                    
-                    This is exactly why we rely on—and will continue to rely on—your team for your extensive ExpressionEngine expertise, your exceptional reliability, and your crystal clear communications and organization.
-                    
-                    Your team consistently goes above and beyond our expectations, and everything we've worked on with you has been a complete success.  You're absolutely invaluable to our national organization, and we look forward to continuing to work with you as strategic partners in the years to come.</p>
+                    <p>SARA: 'Ve Been An Online Marketer Since 2004 And I've Worked With A Lot Of Programmers Over The
+                        Years. If You're Looking For Someone Who Has World-Class Expertise, A Technical Team To Match
+                        Anyone In The Business, And A Creative Team To Be Able To Take A White-Glove Approach And Take
+                        Your Online Project—Whether It's A Website Or A Fully-Automated Online Campaign—If You’re
+                        Looking For Someone Who’s Going To Show Up On Time, Under-Promise And Over-Deliver, It Is
+                        Followbright.
                 </div>
             </div>
         </div>
@@ -255,6 +261,7 @@
                     <div class="row">
 
                         <div class="col-sm-6">
+
                             <input placeholder="name" type="text" name="name" id="name">
                         </div>
                         <div class="col-sm-6">
@@ -291,7 +298,7 @@
                     <a href="#section--3">about</a>&nbsp;|&nbsp;
                     <a href="#section--4">Portfolio</a>&nbsp; |&nbsp;
                     <a href="#section--7">contact</a>
-                    
+
                 </div>
                 <!-- <p class="vsNm">visttor: <span id="vistNum"></span> </p> -->
             </footer>
@@ -303,7 +310,10 @@
     </div>
 
 
-
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+        integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="index.js"></script>
 </body>
 
