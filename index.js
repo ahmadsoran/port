@@ -47,10 +47,6 @@ portBtnParent.addEventListener('click', function (e) {
 
 function navMobile() {
     nvBtn.classList.toggle('afterClick');
-    nvBtns.forEach(line => {
-        line.classList.toggle('AnimNvBtn');
-    });
-
     navItem.classList.toggle('open');
     navItemLink.forEach(link => {
         link.classList.toggle('fade');
