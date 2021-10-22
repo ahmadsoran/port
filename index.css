@@ -160,8 +160,6 @@ body {
   }
 
   #hamburger {
-    width: 10%;
-    height: 10%;
     background-color: transparent;
     border: none;
     cursor: pointer;
