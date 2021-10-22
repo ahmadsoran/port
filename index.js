@@ -175,7 +175,6 @@ cliImg6.addEventListener('mouseenter', changeText.bind(cliComment6));
 var swiper = new Swiper(".mySwiper", {
     effect: "cards",
     grabCursor: true,
-    speed: 500,
     navigation: {
         nextEl: '.next',
         prevEl: '.prev',

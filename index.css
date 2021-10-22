@@ -777,6 +777,7 @@ body {
 .cliimgs img {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 .cliimgs img:hover {
   -webkit-transform: translateY(-10%);
@@ -1065,54 +1066,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   color: white;
-}
-.swiper-slide .cardText {
-  width: 50%;
-  height: 30%;
-  -webkit-box-shadow: 0vw 0.5vw 1.171875vw rgba(0, 0, 0, 0.871);
-          box-shadow: 0vw 0.5vw 1.171875vw rgba(0, 0, 0, 0.871);
-  background-color: #040b33c4;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
-  border-radius: 2.5vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  cursor: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-.swiper-slide h1 {
-  font-size: clamp(0px , 1.5vw , 1.5vw);
-  font-weight: 500;
-  margin: 2% 0%;
-  text-align: center;
-}
-.swiper-slide p {
-  font-size: clamp(0px , 1vw , 1vw);
-  font-weight: 200;
-  margin: 2% 0%;
-  text-align: center;
-}
-.swiper-slide a {
-  font-size: clamp(0px , .8vw , .8vw);
-  margin: 2% 0%;
-  text-align: center;
-  color: white;
-  font-weight: 100;
-}
-.swiper-slide:hover .cardText {
-  background-color: #020620da;
 }
 
 .swiper-slide:nth-child(1) {

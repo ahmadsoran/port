@@ -795,10 +795,12 @@ font-weight: 900;
 .cliimgs{
   img{
     transition: all .5s ease-in-out;
+    cursor: pointer;
     &:hover{
       transform: translateY(-10%);
       box-shadow: -1px 7px 10px rgba(0, 0, 0, 0.521);
       z-index: 99;
+
     }
   }
 }
@@ -1109,50 +1111,6 @@ font-weight: 900;
   transition: all .5s ease-in-out;
   flex-direction: column;
   color: white;
-  
-  .cardText{
-    width: 50%;
-    height: 30%;
-    box-shadow: 0vw .5vw 1.171875vw rgba(0, 0, 0, 0.871);
-    background-color: #040b33c4;
-    backdrop-filter: blur(4px);
-    border-radius: 2.5vw;
-    display: flex;
-    cursor: auto;
-    // visibility: hidden;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transition: all .5s ease-in-out;
-  }
-  h1{
-  font-size: clamp(0px , 1.5vw , 1.5vw);
-  font-weight: 500;
-  margin: 2% 0%;
-  text-align: center;
-  }
-  p{
-    font-size: clamp(0px , 1vw , 1vw);
-    font-weight: 200;
-  margin: 2% 0%;
-  text-align: center;
-
-
-  }
-a{
-  font-size: clamp(0px , .8vw , .8vw);
-  margin: 2% 0%;
-  text-align: center;
-
-  color: white;
-  font-weight: 100;
-
-}
-&:hover{
-  .cardText{
-    background-color: #020620da;
-  }
-}
 }
 
 .swiper-slide{
