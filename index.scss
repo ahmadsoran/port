@@ -91,7 +91,7 @@ font-weight: 900;
   height: 11.7vw;
   left: -30%;
   transform: translateY(-3.7vw);
-
+  
 }
 
 .nav-item a:first-child::after {
@@ -165,9 +165,8 @@ font-weight: 900;
 $stroke-color: $wh-color;
 .afterClick {
   position: fixed !important;
-  right: 1.5%;
-  margin: .6rem;
-
+  margin-right: 3%;
+ 
 
 }
 #hamburger {
@@ -236,7 +235,7 @@ $stroke-color: $wh-color;
     top: 60%;
     left: 50%;
     background: linear-gradient(to top right, $bg-linear-one, $bg-linear-two);
-    width: 100%;
+    width: 120%;
     height: 120%;
     min-height: 50%;
     -moz-clip-path: circle(0px at 50%);
@@ -261,24 +260,7 @@ $stroke-color: $wh-color;
 
   }
 
-  .nvBtn.AnimNvBtn {
 
-    &:nth-child(2) {
-      display: none;
-    }
-
-    &:nth-child(1) {
-      transform: translate(-40%, 300%) rotate(50deg);
-    }
-
-    background-color: red;
-
-    &:nth-child(3) {
-      transform: translate(-45%, -400%) rotate(119deg);
-      background-color: red;
-    }
-
-  }
 
   .fa-arrow-circle-down {
     display: block;

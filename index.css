@@ -155,8 +155,7 @@ body {
 @media screen and (max-width: 768px) {
   .afterClick {
     position: fixed !important;
-    right: 1.5%;
-    margin: 0.6rem;
+    margin-right: 3%;
   }
 
   #hamburger {
@@ -224,7 +223,7 @@ body {
     left: 50%;
     background: -webkit-gradient(linear, left bottom, right top, from(#5f40cf), to(#2d0080));
     background: linear-gradient(to top right, #5f40cf, #2d0080);
-    width: 100%;
+    width: 120%;
     height: 120%;
     min-height: 50%;
     -moz-clip-path: circle(0px at 50%);
@@ -246,22 +245,6 @@ body {
     -webkit-clip-path: circle(100%);
     clip-path: circle(100%);
     visibility: visible;
-  }
-
-  .nvBtn.AnimNvBtn {
-    background-color: red;
-  }
-  .nvBtn.AnimNvBtn:nth-child(2) {
-    display: none;
-  }
-  .nvBtn.AnimNvBtn:nth-child(1) {
-    -webkit-transform: translate(-40%, 300%) rotate(50deg);
-            transform: translate(-40%, 300%) rotate(50deg);
-  }
-  .nvBtn.AnimNvBtn:nth-child(3) {
-    -webkit-transform: translate(-45%, -400%) rotate(119deg);
-            transform: translate(-45%, -400%) rotate(119deg);
-    background-color: red;
   }
 
   .fa-arrow-circle-down {

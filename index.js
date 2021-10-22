@@ -33,9 +33,6 @@ portBtnParent.addEventListener('click', function (e) {
     clickedBtn.classList.add('btnActive');
 
     let timer = 3000;
-    let timeoutActiveClass = setTimeout(function () {
-        clickedBtn.classList.remove('btnActive');
-    }, timer);
 
 
 
@@ -47,9 +44,11 @@ portBtnParent.addEventListener('click', function (e) {
 
 function navMobile() {
     nvBtn.classList.toggle('afterClick');
+    nvBtn.classList.toggle('open');
     navItem.classList.toggle('open');
     navItemLink.forEach(link => {
         link.classList.toggle('fade');
+
     });
 
 }
@@ -62,7 +61,7 @@ nvBtn.addEventListener('click', navMobile);
 
 navItemLink.forEach(links => {
     links.addEventListener('click', navMobile);
-
+    
 
 });
 
