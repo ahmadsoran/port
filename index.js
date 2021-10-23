@@ -33,11 +33,11 @@ portBtnParent.addEventListener('click', function (e) {
     clickedBtn.classList.add('btnActive');
 
     let timer = 3000;
-
-
-
-
-
+    let timeoutActiveClass = setTimeout( function (){
+        clickedBtn.classList.remove('btnActive');
+    }  , timer);
+    
+    timeoutActiveClass();
 });
 
 
