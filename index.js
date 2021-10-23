@@ -98,14 +98,14 @@ const sectionObserver = new IntersectionObserver(revealSection, {
     threshold: 0,
 });
 
-// allElement = document.querySelectorAll('h1', 'p');
+allElement = document.querySelectorAll('h1', 'p');
 
-// allSections.forEach(function (section) {
-//     sectionObserver.observe(section);
-//     section.classList.add('section--hidden');
+allSections.forEach(function (section) {
+    sectionObserver.observe(section);
+    section.classList.add('section--hidden');
 
 
-// });
+});
 
 
 const script1 = document.querySelector('#scriptOne span');
