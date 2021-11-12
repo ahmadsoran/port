@@ -915,7 +915,7 @@ body {
       top: 3%;
       left: 50%;
       transform: translate(-50%, -50%) rotate(90deg);
-    opacity: .7;
+      opacity: .7;
     }
   }
 }
@@ -972,12 +972,12 @@ body {
       cursor: pointer;
       padding: 1.5% 5%;
       background-color: #FF0513;
-    font-size: clamp(1rem, 1.5vw, 1.5vw);
+      font-size: clamp(1rem, 1.5vw, 1.5vw);
 
     }
   }
 }
-   
+
 
 
 
@@ -1008,13 +1008,13 @@ body {
   a {
     transition: color 0.5s ease-in-out;
     color: gainsboro;
-    margin:0% 1%;
+    margin: 0% 1%;
     // text-decoration: none;
     font-weight: 200;
     font-size: clamp(.5rem, 1vw, 1vw);
     opacity: .7;
     text-transform: lowercase;
-  
+
     &:hover {
       color: powderblue;
     }
@@ -1139,7 +1139,7 @@ body {
 }
 
 .portBtn {
-  
+
   button {
     stroke: #FFFFFF;
     stroke-width: 2px;
@@ -1159,7 +1159,7 @@ body {
 
 
   }
-  
+
   button.btnActive {
     background-color: #FF0513;
 
@@ -1233,7 +1233,7 @@ body {
   .swiper {
     width: clamp(6rem, 100%, 100vw);
     height: clamp(6rem, 60vw, 60vw);
-  
-  
+
+
   }
 }
