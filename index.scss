@@ -970,8 +970,10 @@ body {
       border-radius: 4.5rem;
       margin-top: 2rem;
       cursor: pointer;
-      padding: 2% 5%;
+      padding: 1.5% 5%;
       background-color: #FF0513;
+    font-size: clamp(1rem, 1.5vw, 1.5vw);
+
     }
   }
 }
@@ -1004,16 +1006,17 @@ body {
   align-items: center;
 
   a {
-    transition: all 0.5s ease-in-out;
-    color: $wh-color;
-    margin-left: 3px;
-    text-decoration: none;
+    transition: color 0.5s ease-in-out;
+    color: gainsboro;
+    margin:0% 1%;
+    // text-decoration: none;
     font-weight: 200;
-    font-size: clamp(.7rem, 1.5vw, 1.5vw);
+    font-size: clamp(.5rem, 1vw, 1vw);
     opacity: .7;
-
+    text-transform: lowercase;
+  
     &:hover {
-      color: $hov-color;
+      color: powderblue;
     }
   }
 }
