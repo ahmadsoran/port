@@ -69,25 +69,7 @@ cvBTn.addEventListener('click', () => {
     alert("sorry this just an example")
 })
 
-document.querySelector('.nav-item').addEventListener('click', function (e) {
-    e.preventDefault();
-  
-    // Matching strategy
-    if (e.target.classList.contains('nav-link')) {
-      const id = e.target.getAttribute('href');
-      document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
-    }
-  });
 
-  document.querySelector('.footerLinks').addEventListener('click', function (e) {
-    e.preventDefault();
-  
-    // Matching strategy
-    if (e.target.classList.contains('Flink')) {
-      const id = e.target.getAttribute('href');
-      document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
-    }
-  });
 
 //                         animation 
 
